@@ -1,0 +1,77 @@
+version: "3"
+services:
+  postgres:
+    image: mdillon/postgis:10
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: sample123
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - sonarnet
+    restart: unless-stopped
+    volumes:
+      - ${LOCAL_POSTGRES_DATA_DIR}:/data/postgres
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./populate.sql:/docker/populate.sql
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+  redis:
+    image: 'redis'
+    container_name: redis
+    command: redis-server --requirepass sample123
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+
+  elasticsearch:
+    image: elasticsearch:6.8.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+  kibana:
+    image: kibana:6.8.0
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+
+  springcloudconfig:
+    image: hyness/spring-cloud-config-server:2.2.4.RELEASE
+
+    container_name: springcloudconfig
+    environment:
+      SPRING_PROFILES_ACTIVE: security
+    ports:
+      - 8888:8888
+    volumes:
+      - ./springcloudconfig/application.yml:/config/application.yml
+      - ./springcloudconfig/bootstrap.yml:/config/bootstrap.yml
+
+networks:
+  sonarnet:
+    driver: bridge
+
+volumes:
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_extensions:
+  redis_data:
+  elasticsearch_data:
