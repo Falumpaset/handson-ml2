@@ -1,0 +1,373 @@
+---
+testcases:
+- NACHNAME: Immomio
+  VORNAME: Hamburg
+  MERKMALCODE: A5
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1970-01-01
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Wiesbaden
+    PLZ: 65201
+    STRASSE: Kormoranweg 5
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-1
+
+- NACHNAME: Wolkenkratzer
+  VORNAME: Ella
+  MERKMALCODE: A6
+  KOMMENTAR: Der Testfall wird nur bei AnfrAn übermittelt
+  GEBURTSDATUM: 1955-05-05
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Massenbergstr. 13
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-2
+
+- NACHNAME: Hochhaus-ANFRAGE
+  VORNAME: Ludwig-Ferdinand
+  MERKMALCODE: AI
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1988-08-08
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Kortumstr. 88
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-3
+
+- NACHNAME: Bekannt
+  VORNAME: Gisela Henriette Charlotte
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1966-06-06
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Nordring 349
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-4
+
+- NACHNAME: Eigentlich-Fremder
+  VORNAME: Sieglinde
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1944-04-04
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Massenbergstr. 13
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-5
+
+- NACHNAME: Anders-Etwas
+  VORNAME: Frido
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1956-06-05
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Massenbergstr. 14
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-6
+
+- NACHNAME: Lehrer
+  VORNAME: Ludwig
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1977-07-07
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44789
+    STRASSE: Königsallee 37
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-7
+
+- NACHNAME: Verlobt
+  VORNAME: Verena
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1988-08-09
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44789
+    STRASSE: Königsallee 38
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-8
+
+- NACHNAME: Verschwunden
+  VORNAME: Hansi
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1933-03-03
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44789
+    STRASSE: Königsallee 39
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-9
+
+- NACHNAME: Ausgewandert
+  VORNAME: Heintje
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1955-05-05
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Herner Str. 44
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-11
+
+- NACHNAME: Verloren
+  VORNAME: Manfred
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1977-07-07
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44787
+    STRASSE: Herner Str. 45
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-12
+
+- NACHNAME: SchnittstellenErmöglichenDieKommunikationZwischenSystemen
+  VORNAME: Karl-Theodor-Mariä-Nikolaus-Johann-Jacob-Philipp zu Guttenberg
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1950-01-01
+  GEBURTSORT: Abnahme TDS B2C mit Überlänge
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Michelbach an der Bilz Gschlachtenbretzingen-Ost
+    PLZ: 74544
+    STRASSE: Bildwiesenweg 24
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-13
+
+
+- NACHNAME: SchnittstellentestDonnées
+  VORNAME: André
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1970-04-30
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Portimaó
+    PLZ: 8500-801
+    STRASSE: Edifício Amarilis Praia da Rocha Avenida V3
+    LAND: PRT
+  VORADRESSE:
+    ORT: Nîmes
+    PLZ: 30000
+    LAND: FRA
+    STRASSE: 755 Tour de l'Evèque
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-14
+
+
+- NACHNAME: Schnittstellentest
+  VORNAME: Świętą Łůcję
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 0000-00-00
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: u
+  AKTUELLE_ADRESSE:
+    ORT: Chemnitz
+    PLZ: 09120
+    STRASSE: Annaberger Straße 89
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-15
+
+- NACHNAME: Schnittstellentest
+  VORNAME: Michaela
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1880-01-01
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Hellschen-Heringsand-Unterschaar
+    PLZ: 25764
+    STRASSE: Koogweg 3
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-16
+
+- NACHNAME: D'Aloisio
+  VORNAME: Raßmus
+  TITEL: Prof.Dr.
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1995-12-31
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Elmshorn
+    PLZ: 25336
+    STRASSE: Op'n Knüll 1
+  VORADRESSE:
+    ORT: Köln
+    PLZ: 50825
+    STRASSE: Iltisstr. 57
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-17
+
+- NACHNAME: Theß
+  VORNAME: Simon
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1970-01-01
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Dingolfing
+    PLZ: 84130
+    STRASSE: Bischoeflich-Geistlicher-Rat-Josef-Zinnbauer Strasse 24
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-19
+
+- NACHNAME: Theß
+  VORNAME: Simon
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1970-01-01
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Dingolfing
+    PLZ: 84130
+    STRASSE: Bischoeflich-Geistlicher-Rat-Josef-Zinnbauer Strasse 24
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-20
+
+- NACHNAME: Verbrauchermeldung
+  VORNAME: Dörthe
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Verbrauchermeldungen übermittelt
+  GEBURTSDATUM: 1967-04-01
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Röderaue
+    PLZ: 01609
+    STRASSE: Teichweg 1
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-21
+
+- NACHNAME: Kundenbotschaft
+  VORNAME: Ünsel
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Verbrauchermeldungen übermittelt
+  GEBURTSDATUM: 1992-03-12
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: m
+  AKTUELLE_ADRESSE:
+    ORT: Weissenberg
+    PLZ: 02627
+    STRASSE: Ernst-Thälmann-Str. 13
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-22

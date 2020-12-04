@@ -1,0 +1,5 @@
+check process immomio-ftp
+  with pidfile /var/immomio/sys/run/importer/importer.pid
+  start program "/var/immomio/jobs/importer-job/bin/ctl start"
+  stop program "/var/immomio/jobs/importer-job/bin/ctl stop"
+  group vcap

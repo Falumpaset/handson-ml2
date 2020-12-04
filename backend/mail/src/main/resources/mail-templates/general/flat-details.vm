@@ -1,0 +1,9 @@
+<p>
+    <strong>$property.data.name</strong><br/>
+    &euro; $property.data.basePrice, $property.data.rooms, $property.data.size m2
+</p>
+<p>
+  $property.data.address.street $property.data.address.houseNumber
+  <br/>
+  $property.data.address.zipCode $property.data.address.city
+</p>

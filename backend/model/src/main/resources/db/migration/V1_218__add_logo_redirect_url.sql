@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column  logo_redirect_url varchar(1024);

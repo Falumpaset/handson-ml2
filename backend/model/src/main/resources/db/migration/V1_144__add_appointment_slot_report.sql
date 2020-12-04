@@ -1,0 +1,24 @@
+ALTER TYPE landlord.report_chart RENAME TO report_chart_old;
+
+create type landlord.report_chart as enum ('PROPERTY_CREATED',
+    'PROPERTY_PUBLISHED',
+    'APPLICATIONS_TOTAL',
+    'APPLICATIONS_BY_PORTAL',
+    'APPLICATIONS_INTENTIONS',
+    'APPLICATIONS_APPOINTMENT_ACCEPTANCES',
+    'PROPOSAL_OFFERED',
+    'APPOINTMENT_OCCURENCES',
+    'APPOINTMENT_SLOTS',
+    'HOUSEHOLD_TYPE_DISTRIBUTION',
+    'HOUSEHOLD_SIZE_DISTRIBUTION',
+    'EMPLOYMENT_TYPE_DISTRIBUTION',
+    'WBS_DISTRIBUTION',
+    'ANIMALS_DISTRIBUTION',
+    'CITY_DISTRIBUTION',
+    'ZIP_DISTRIBUTION',
+    'INCOME_DISTRIBUTION');
+
+ALTER TABLE landlord.chart_setting
+    ALTER COLUMN "chart" TYPE landlord.report_chart USING "chart"::text::landlord.report_chart;
+
+DROP TYPE landlord.report_chart_old;

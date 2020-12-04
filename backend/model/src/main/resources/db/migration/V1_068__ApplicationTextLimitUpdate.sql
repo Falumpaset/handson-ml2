@@ -1,0 +1,1 @@
+ALTER TABLE shared.application ALTER COLUMN text TYPE text;

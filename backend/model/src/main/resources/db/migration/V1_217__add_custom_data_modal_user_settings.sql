@@ -1,0 +1,1 @@
+alter table landlord.usersettings add column  custom_data_modal_data jsonb;

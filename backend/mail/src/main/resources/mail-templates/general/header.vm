@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+#**
+ * msg
+ *
+ * Shorthand macro to retrieve locale sensitive message from language.properties
+ *#
+  #macro( msg $key )$messages.getMessage($key, null, $locale)#end
+
+<div>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" bgcolor="#e1e8ed" class="body_wrapper"
+           style="font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal;    text-indent: 0px; text-transform: none; white-space: normal;  word-spacing: 0px;  background-color: rgb(225,232,237); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+        <tbody>
+        <tr>
+            <td align="center" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                <table id="header" align="center" width="500" bgcolor="#ffffff" cellpadding="0" cellspacing="0"
+                       border="0" style="width: 500px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    <tbody>
+                    <tr>
+                        <td class="cut"
+                            style="min-width: 500px; height: 1px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                <table id="header" align="center" width="500" bgcolor="#ffffff" cellpadding="0" cellspacing="0"
+                       border="0"
+                       style="width: 500px; background-color: rgb(255,255,255); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    <tbody>
+                    <tr>
+                        <td height="15" class="logo_space"
+                            style="height: 15px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                            &nbsp;<span class="Apple-converted-space">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                   style="width: 500px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                <tbody>
+                                <tr>
+                                    <td width="50" class="margins"
+                                        style="width: 50px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+                                    <td align="left" width="100"
+                                        style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                        <a href="$web"
+                                           style="text-decoration: none; border: 0px; padding: 0px; margin: 0px;"
+                                           target="_blank">
+                                            <img align="left" width="100" src="$logo"
+                                                 style="width: 100px; margin: 0px; padding: 0px; display: block; border: none; ">
+                                        </a>
+                                    </td>
+                                    <td align="left" width="10"
+                                        style="width: 10px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+                                    <td align="left" class="greeting"
+                                        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 16px; text-align: left;"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="14" class="logo_space"
+                            style="height: 14px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                            &nbsp;<span class="Apple-converted-space">&nbsp;</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table align="center" width="500" cellpadding="0" cellspacing="0" border="0"
+                       style="width: 500px; background-color: rgb(255,255,255); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    <tbody>
+                    <tr id="border">
+                        <td colspan="2" height="1"
+                            style="display: block; height: 1px; background-color: rgb(225,232,237); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table align="center" width="500" cellpadding="0" cellspacing="0" border="0"
+                       style="width: 500px; background-color: rgb(255,255,255); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    <tbody>
+                    <tr>
+                        <td width="50" class="margins"
+                            style="width: 50px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+                        <td align="center" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0"
+                                   style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                <tbody>
+                                <tr>
+                                    <td height="30"
+                                        style="height: 30px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+                                </tr>

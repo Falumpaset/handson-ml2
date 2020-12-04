@@ -1,0 +1,758 @@
+{
+	"info": {
+		"_postman_id": "51e727f2-5267-4443-833e-4229d9f42798",
+		"name": "Immomio - DMV Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ITP",
+			"item": [
+				{
+					"name": "Prod - checkstatus",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "c62fc223-8946-4c15-b5e4-02e2d46fb4fd",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"warning": "Key contains invalid characters.",
+								"key": "Accept",
+								"value": "\"application/json\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"payee_lastname\": \"101\",\n    \"payee_firstname\": \"Timm\",\n    \"payee_iban\": \"DE00123456780123456789\",\n    \"identification_code\": \"c950736\",\n    \"payment_as_sctinst\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://identapi-prod.itp-world.com/api/v1/identcheck/status/ede6580f-9996-41a8-8585-548020e3f1fb.json",
+							"protocol": "https",
+							"host": [
+								"identapi-prod",
+								"itp-world",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"identcheck",
+								"status",
+								"ede6580f-9996-41a8-8585-548020e3f1fb.json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mock - identchecks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "c62fc223-8946-4c15-b5e4-02e2d46fb4fd",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"warning": "Key contains invalid characters.",
+								"key": "Accept",
+								"value": "\"application/json\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"payee_lastname\": \"101\",\n    \"payee_firstname\": \"Timm\",\n    \"payee_iban\": \"DE00123456780123456789\",\n    \"identification_code\": \"c950736\",\n    \"payment_as_sctinst\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://identapi-prod.itp-world.com/api/v1/mock/identchecks.json",
+							"protocol": "https",
+							"host": [
+								"identapi-prod",
+								"itp-world",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"identchecks.json"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Landlord",
+			"item": [
+				{
+					"name": "Contract overview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/search/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"list",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get contract details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/b09984c0-a289-41fa-b681-7c52d8387335/contract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"b09984c0-a289-41fa-b681-7c52d8387335",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create contract ES",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"envelopeId\": null,\n    \"signatureType\": \"ES_MAIL\",\n    \"firstSigner\": \"TENANT\",\n    \"embeddedSendingRedirectUrl\": \"http://app.itg.immomio.com/de/contracts?immomio=edit\",\n    \"landlordSigners\": [\n        {\n            \"firstname\": \"Andreas\",\n            \"lastname\": \"Landlord 1\",\n            \"email\": \"ahansen+dmv-200513-ll-01@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"\",\n                \"country\": \"DE\",\n                \"street\": \"\",\n                \"houseNumber\": \"\",\n                \"zipCode\": \"\"\n            }\n        },\n        {\n            \"firstname\": \"Tanja\",\n            \"lastname\": \"Landlord 02\",\n            \"email\": \"ahansen+dmv-200513-ll-02@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"\",\n                \"country\": \"DE\",\n                \"street\": \"\",\n                \"houseNumber\": \"\",\n                \"zipCode\": \"\"\n            }\n        }\n    ],\n    \"tenantSigners\": [\n        {\n            \"firstname\": \"Andreas\",\n            \"lastname\": \"Milosevic\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+dmv-200513-ps-01@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Hamburg\",\n                \"country\": \"DE\",\n                \"street\": \"Hierstrasse\",\n                \"houseNumber\": \"12\",\n                \"zipCode\": \"20359\"\n            }\n        },\n        {\n            \"firstname\": \"Tanja\",\n            \"lastname\": \"Milosevic\",\n            \"gender\": \"FEMALE\",\n            \"email\": \"ahansen+dmv-200513-ps-02@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Hamburg\",\n                \"country\": \"DE\",\n                \"street\": \"Hierstrasse\",\n                \"houseNumber\": \"12\",\n                \"zipCode\": \"20359\"\n            }\n        }\n    ],\n    \"property\": {\n        \"additionalCosts\": null,\n        \"address\": {\n            \"city\": \"Hamburg\",\n            \"country\": \"DE\",\n            \"region\": \"Hamburg\",\n            \"street\": \"Grimmallee\",\n            \"houseNumber\": \"42\",\n            \"zipCode\": \"20359\"\n        },\n        \"floor\": null,\n        \"heatingCost\": null,\n        \"bailment\": 0,\n        \"externalId\": null,\n        \"name\": \"Märchenschloß\",\n        \"rent\": 350,\n        \"rooms\": 15,\n        \"size\": 1230,\n        \"customerName\": null,\n        \"customerLogo\": null,\n        \"titleImage\": null\n    },\n    \"documentFiles\": [\n        {\n            \"name\": \"Mietvertrag_3Mieter_IBAN.pdf\",\n            \"title\": \"Mietvertrag_3Mieter_IBAN.pdf\",\n            \"type\": \"PDF\",\n            \"url\": \"https://s3.eu-central-1.amazonaws.com/immomio-int-doc-store/PDF-d67ee02760aa4e9ba048c419e3bb97d3.pdf\",\n            \"identifier\": \"d67ee02760aa4e9ba048c419e3bb97d3\",\n            \"extension\": \"pdf\",\n            \"encrypted\": false\n        }\n    ],\n    \"applicationId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create contract AES",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"envelopeId\": null,\n    \"signatureType\": \"AES_MAIL\",\n    \"firstSigner\": \"TENANT\",\n    \"embeddedSendingRedirectUrl\": \"http://app.itg.immomio.com/de/contracts?immomio=edit\",\n    \"landlordSigners\": [\n        {\n            \"firstname\": \"Andreas\",\n            \"lastname\": \"Landlord 1\",\n            \"email\": \"ahansen+dmv-200621-ll-01@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"\",\n                \"country\": \"DE\",\n                \"street\": \"\",\n                \"houseNumber\": \"\",\n                \"zipCode\": \"\"\n            }\n        },\n        {\n            \"firstname\": \"Tanja\",\n            \"lastname\": \"Landlord 02\",\n            \"email\": \"ahansen+dmv-200621-ll-02@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"\",\n                \"country\": \"DE\",\n                \"street\": \"\",\n                \"houseNumber\": \"\",\n                \"zipCode\": \"\"\n            }\n        }\n    ],\n    \"tenantSigners\": [\n        {\n            \"firstname\": \"Timm\",\n            \"lastname\": \"Avconet Koop\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+dmv-200621-ps-01@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"BOCHUM\",\n                \"country\": \"DE\",\n                \"street\": \"MASSENBERGSTRASSE\",\n                \"houseNumber\": \"9\",\n                \"zipCode\": \"44787\"\n            }\n        },\n        {\n            \"firstname\": \"Timm\",\n            \"lastname\": \"Avconet Koop\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+dmv-200621-ps-02@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"BOCHUM\",\n                \"country\": \"DE\",\n                \"street\": \"MASSENBERGSTRASSE\",\n                \"houseNumber\": \"9\",\n                \"zipCode\": \"44787\"\n            }\n        }\n    ],\n    \"property\": {\n        \"additionalCosts\": null,\n        \"address\": {\n            \"city\": \"Hamburg\",\n            \"country\": \"DE\",\n            \"region\": \"Hamburg\",\n            \"street\": \"Grimmallee\",\n            \"houseNumber\": \"42\",\n            \"zipCode\": \"20359\"\n        },\n        \"floor\": null,\n        \"heatingCost\": null,\n        \"bailment\": 0,\n        \"externalId\": null,\n        \"name\": \"Märchenschloß\",\n        \"rent\": 350,\n        \"rooms\": 15,\n        \"size\": 1230,\n        \"customerName\": null,\n        \"customerLogo\": null,\n        \"titleImage\": null\n    },\n    \"documentFiles\": [\n        {\n            \"url\": \"https://s3.eu-central-1.amazonaws.com/immomio-int-doc-store/PDF-f2d11d9c5cfd40ee8bcb4bb4887ce10e.pdf\",\n            \"name\": \"expose-10007853258946571946463710.pdf\",\n            \"type\": \"PDF\",\n            \"index\": 0,\n            \"title\": \"expose-10007853258946571946463710.pdf\",\n            \"encrypted\": false,\n            \"extension\": \"pdf\",\n            \"identifier\": \"f2d11d9c5cfd40ee8bcb4bb4887ce10e\"\n        }\n    ],\n    \"applicationId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signatur mapping url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"signatureType\": \"ES_MAIL\",\n    \"firstSigner\": \"TENANT\",\n    \"embeddedSendingRedirectUrl\": \"http://app.itg.immomio.com/de/contracts?immomio=edit\",\n    \"landlordSigners\": [\n        {\n            \"firstname\": \"Graf\",\n            \"lastname\": \"Zahl\",\n            \"email\": \"ahansen+itg-ll-3-agent-5@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Bellevue\",\n                \"country\": \"US\",\n                \"region\": \"Washington\",\n                \"street\": \"Chaussee\",\n                \"houseNumber\": \"5\",\n                \"zipCode\": \"55555\"\n            }\n        }\n    ],\n    \"tenantSigners\": [\n        {\n            \"firstname\": \"Timm\",\n            \"lastname\": \"Avconet Koop Mieter 1\",\n            \"dateOfBirth\": \"1969-08-02T00:00:00.000Z\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+avconet-koop@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Bochum\",\n                \"street\": \"MASSENBERGSTRASSE\",\n                \"houseNumber\": \"9\",\n                \"zipCode\": \"44787\"\n            }\n        },\n        {\n            \"firstname\": \"Timm\",\n            \"lastname\": \"Avconet Koop Mieter 2\",\n            \"dateOfBirth\": \"1969-08-02T00:00:00.000Z\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+avconet-koop@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Bochum\",\n                \"street\": \"MASSENBERGSTRASSE\",\n                \"houseNumber\": \"9\",\n                \"zipCode\": \"44787\"\n            }\n        },\n        {\n            \"firstname\": \"Timm\",\n            \"lastname\": \"Avconet Koop Mieter 3\",\n            \"dateOfBirth\": \"1969-08-02T00:00:00.000Z\",\n            \"gender\": \"MALE\",\n            \"email\": \"ahansen+avconet-koop@immomio.de\",\n            \"status\": null,\n            \"docuSignRecipientClientId\": null,\n            \"address\": {\n                \"city\": \"Bochum\",\n                \"street\": \"MASSENBERGSTRASSE\",\n                \"houseNumber\": \"9\",\n                \"zipCode\": \"44787\"\n            }\n        }\n    ],\n    \"property\": {\n        \"additionalCosts\": 100,\n        \"address\": {\n            \"city\": \"Bellevue\",\n            \"country\": \"US\",\n            \"region\": \"Washington\",\n            \"street\": \"Ludwig-Erhard-Straße\",\n            \"houseNumber\": \"3000\",\n            \"zipCode\": \"98004\"\n        },\n        \"floor\": 1,\n        \"heatingCost\": 30,\n        \"bailment\": 3000,\n        \"externalId\": null,\n        \"name\": \"1 zimmer im Hamburg\",\n        \"rent\": 1000,\n        \"rooms\": 4,\n        \"size\": 110,\n        \"customerName\": \"Test Immo\",\n        \"customerLogo\": \"https://s3.eu-central-1.amazonaws.com/immomio-int-img-store/IMG-df340872c8474864ad866519ec8af8ae.png\",\n        \"titleImage\": {\n            \"title\": \"cool-wohnung.jpeg\",\n            \"type\": \"IMG\",\n            \"url\": \"https://s3.eu-central-1.amazonaws.com/immomio-int-img-store/IMG-51d855e668e54959b6773b17c1dfdcfb.jpg\",\n            \"identifier\": \"51d855e668e54959b6773b17c1dfdcfb\",\n            \"extension\": \"jpg\",\n            \"encrypted\": false,\n            \"index\": 0\n        }\n    },\n    \"documentFiles\": [\n        {\n            \"url\": \"https://s3.eu-central-1.amazonaws.com/immomio-int-doc-store/PDF-0db71d95510743c1a6b711639f05f83a.pdf\",\n            \"name\": \"Mietvertrag_3Mieter_Checkboxes_Text.pdf\",\n            \"type\": \"PDF\",\n            \"index\": 0,\n            \"title\": \"Mietvertrag_3Mieter_Checkboxes_Text.pdf\",\n            \"encrypted\": false,\n            \"extension\": \"pdf\",\n            \"identifier\": \"0db71d95510743c1a6b711639f05f83a\"\n        }\n    ],\n    \"applicationId\": \"2920404\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete contract",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/9829faca-9469-4c3d-8198-53a5ac3619c8/contract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"9829faca-9469-4c3d-8198-53a5ac3619c8",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get signing url for landlord",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTg4MTY2MTE2Mzg5LCJzaWduZXJJZCI6MTAwMjUxN30.JcwW8qeOxBoWvXKsRBGxNOMkISnlfQ6HOB5SXL9O008\",\n  \"redirectUrl\": \"https://www.vermieter.immomio.com/\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/dmv/signingUrl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"dmv",
+								"signingUrl"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tenant",
+			"item": [
+				{
+					"name": "Contract get contract data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTg3NTc0MjAzODU1LCJzaWduZXJJZCI6MTAwMTg1M30.MAfcilA3mDeBOVwHlVqLDbKmi5zIzXOFqMftTqvOMu0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8004/dmv/getContractData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8004",
+							"path": [
+								"dmv",
+								"getContractData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contract get signing url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTkxMjU1MzE4NzY1LCJzaWduZXJJZCI6MTAwMzY5MH0.3iccRUGu45R95kHwrfjCYB2wF1XFVyvYE9gNaOnuF8U\",\n  \"redirectUrl\": \"https://www.immomio.de\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8004/dmv/signingUrl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8004",
+							"path": [
+								"dmv",
+								"signingUrl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update flat visited",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTk1MTQ1ODA3NDAyLCJzaWduZXJJZCI6MTAwMDAwNH0.J3TAqbY075cwFb5iJZYY63Zu1OSvZ86Yn3mx729Yq6E\",\n    \"redirectUrl\": \"https://www.vermieter.immomio.com/\",\n    \"flatVisited\": \"2020-03-13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8004/dmv/updateFlatVisited",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8004",
+							"path": [
+								"dmv",
+								"updateFlatVisited"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Start AES check",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTk1MTQ1ODA3NDAyLCJzaWduZXJJZCI6MTAwMDAwNH0.J3TAqbY075cwFb5iJZYY63Zu1OSvZ86Yn3mx729Yq6E\",\n    \"iban\": \"DE77533700080111111100\",\n    \"redirectUrl\": \"http://www.immomio.de\",\n    \"dateOfBirth\": \"02.08.1969\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8004/dmv/updateFlatVisited",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8004",
+							"path": [
+								"dmv",
+								"updateFlatVisited"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify AES code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkIjpudWxsLCJleHBpcmVkIjoxNTg5NTMzODY1NDE5LCJzaWduZXJJZCI6MTAwMjkwMn0.ATm--VUJkQ-s3X-jDXSoZtx4XKLohn9vbN1Qs3oK5eE\",\n  \"redirectUrl\": \"http://www.immomio.de\",\n  \"aesCode\": \"lc0ipq4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8004/dmv/verifyAesCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8004",
+							"path": [
+								"dmv",
+								"verifyAesCode"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Trigger docusing status task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZWEwY0hLUHhzV3Q2clhBQy13a251UkNEaHRBQlJ0ZjRxSHJsNGdObDk0In0.eyJqdGkiOiIxYjI5NWM1My1kZDQxLTQ1MGMtODUxNi0zZDIyMmU0OWE3NGIiLCJleHAiOjE3NTM2MTE2NDAsIm5iZiI6MCwiaWF0IjoxNTgwODExNjQwLCJpc3MiOiJodHRwczovL3Nzby5pdGcuaW1tb21pby5jb20vYXV0aC9yZWFsbXMvaW1tb21pby1pdGciLCJhdWQiOiJpbW1vbWlvLW9pZGMiLCJzdWIiOiJkNDVjZDU3MC1kYTQ2LTQ3ODQtYWJhNi01NjMzYTU2ZTExODUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpbW1vbWlvLW9pZGMiLCJub25jZSI6IjQ4MThhNTM0LTI0MDktNGI4ZC1hMDQyLWMyYjZiYTdhNjM0NiIsImF1dGhfdGltZSI6MTU4MDgxMTY0MCwic2Vzc2lvbl9zdGF0ZSI6IjIxYzdmMWEzLTMyYzItNGQyZC1iOThmLTM1NGU4MjZlYTY3MCIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoibWFpayBraW5nYSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1iYXVtYmFjaCIsImdpdmVuX25hbWUiOiJtYWlrIiwiZmFtaWx5X25hbWUiOiJraW5nYSIsImVtYWlsIjoibWJhdW1iYWNoQGltbW9taW8uZGUifQ.tVUUXgvaRZdLEHicoNx4eRSwqYyAVEaFVC5IYYCW4k1V29sOI6rpTwrbyWqBszWgQUG5-B-XkKrLH6fTCiIgusyV2qkI4yX9O5IMJxkx54pMHLBBAA3XOpq4IYT6agNWQBaJH42K9pSqUkGkTF7d-MWazgwLDALYov0Go7QrZEQhcXzhYif2DuIzuudKzyq9yU2fGGPBhGgmZLeVShtrHPbT0nzv9PSk7Ki-tcDKqGJUxZKRephjt5XOJpAZzN-OPaVqoTENFanQGPgeNaC9TV_wGG01Spc1p5n4_yW8rIpXZNb0bx7nqeJglkc98R3kAtleksRTe2qakURmfZY_vg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"page\": 0,\n\"size\":200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8011/users/triggerCronJob?X-Auth-Token=WmxkbGF1R2loajd4eEI2NWNVMDNqUmtndFhPc2cxOXlyM3QzM3RMbUdaTT0=&jobName=docuSignStatusTask",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"users",
+						"triggerCronJob"
+					],
+					"query": [
+						{
+							"key": "X-Auth-Token",
+							"value": "WmxkbGF1R2loajd4eEI2NWNVMDNqUmtndFhPc2cxOXlyM3QzM3RMbUdaTT0="
+						},
+						{
+							"key": "jobName",
+							"value": "docuSignStatusTask"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

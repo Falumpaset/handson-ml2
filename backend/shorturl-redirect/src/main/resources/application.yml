@@ -1,0 +1,10 @@
+server:
+  port: 0
+spring:
+  application:
+    name: shorturl-redirect
+---
+spring:
+  profiles: development, default
+server:
+  port: 8090

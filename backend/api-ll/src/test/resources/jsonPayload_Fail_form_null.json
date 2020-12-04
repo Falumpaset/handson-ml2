@@ -1,0 +1,22 @@
+{
+  "jsonPayload": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "select2": {
+          "title": "Select with titleMap (old style)",
+          "type": "string",
+          "enum": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      }
+    }
+  },
+  "scoring": true,
+  "desiredResponses": {
+    "select2": "c"
+  }
+}

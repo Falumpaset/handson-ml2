@@ -1,0 +1,1 @@
+create index if not exists idx_property_id_state on shared.propertyproposal (property_id, state)

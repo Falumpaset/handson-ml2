@@ -1,0 +1,77 @@
+{
+  "name": "Schöne 2 Zi-Whg. im Schanzenviertel - IMPORTED",
+  "size": 53.53,
+  "floor": 0,
+  "rooms": 2.0,
+  "garden": false,
+  "ground": "LAMINATE",
+  "heater": "CENTRAL",
+  "address": {
+    "city": "Hamburg",
+    "region": "Hamburg",
+    "street": "Amandastraße",
+    "country": "DE",
+    "zipCode": "20357",
+    "additional": null,
+    "coordinates": null,
+    "houseNumber": "66 a"
+  },
+  "balcony": false,
+  "contact": null,
+  "bailment": 1873.0,
+  "elevator": false,
+  "flatType": "FLOOR",
+  "basePrice": 624.34,
+  "bathRooms": 1,
+  "documents": [],
+  "flatShare": false,
+  "externalId": null,
+  "attachments": [
+    {
+      "url": "https://s3.eu-central-1.amazonaws.com/immomio-dev-img-store/IMG-d0209adf5f3245709c1b27688aac8a4e.jpg",
+      "type": "IMG",
+      "title": "Schöne 2 Zi-Whg. im Schanzenviertel - IMPORTED Bild1.jpeg",
+      "encrypted": false,
+      "extension": "jpeg",
+      "identifier": "d0209adf5f3245709c1b27688aac8a4e"
+    }
+  ],
+  "barrierFree": false,
+  "heatingCost": 50.0,
+  "kitchenette": false,
+  "referenceId": null,
+  "showAddress": false,
+  "showContact": false,
+  "basementSize": null,
+  "parkingSpace": false,
+  "availableFrom": "Tue Nov 01 12:27:53 CET 2016",
+  "guestToilette": false,
+  "serviceCharge": 63.0,
+  "constructionYear": null,
+  "historicBuilding": false,
+  "shortDescription": "",
+  "basementAvailable": null,
+  "buildingCondition": null,
+  "energyCertificate": {
+    "creationDate": "APRIL_2014",
+    "usageCertificate": {
+      "energyConsumption": null,
+      "energyEfficiencyClass": null,
+      "includesHeatConsumption": false,
+      "energyConsumptionParameter": null
+    },
+    "demandCertificate": {
+      "endEnergyConsumption": "159.5",
+      "energyEfficiencyClass": null
+    },
+    "yearOfConstruction": 1956,
+    "energyCertificateType": "DEMAND_IDENTIFICATION",
+    "primaryEnergyProvider": "LONG_DISTANCE"
+  },
+  "lastRefurbishment": null,
+  "objectDescription": "Wohnung mit Vollbad und Abstellkammer in der Küche.",
+  "objectLocationText": "Top Lage im Schanzenviertel. Einkaufsmöglichkeiten, Cafés, die öffentlichen Verkehrsmittel etc. sind fußläufig erreichbar.",
+  "heatingCostIncluded": false,
+  "furnishingDescription": "t",
+  "objectMiscellaneousText": "Im Mietvertrag wird eine Indexmiete vereinbart."
+}

@@ -1,0 +1,27 @@
+#parse('/mail-templates/general/header.vm')
+<tr class="">
+    <td align="left" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;" class="">
+        <span class="headline_1"
+              style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 28px; padding: 0px; margin: 0px; font-weight: 300; line-height: 28px; text-align: left;">
+            #msg("property.invite.to.viewing.head")
+        </span>
+    </td>
+</tr>
+<tr class="">
+    <td height="12" class="v_space"
+        style="height: 12px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+</tr>
+<tr class="">
+    <td align="left" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+        <p>#msg("property.invite.to.viewing.intro")</p>
+        <p>#msg("property.invite.to.viewing.main")</p>
+        <p><b>$date.format('dd.MM.yyyy - HH:mm', $appointmentDate, $locale, $timezone)</b></p>
+        #parse('/mail-templates/general/flat-details.vm')
+        <p>#msg("property.invite.to.viewing.attachments")</p>
+    </td>
+</tr>
+<tr class="">
+    <td height="22" style="height: 22px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;" class=""></td>
+</tr>
+#parse('/mail-templates/general/footer.vm')

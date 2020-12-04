@@ -1,0 +1,1 @@
+alter table landlord.followup_notification add column sent boolean not null default false;

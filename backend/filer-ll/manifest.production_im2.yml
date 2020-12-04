@@ -1,0 +1,18 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 2048M
+domain: immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: production
+applications:
+- name: filer-ll
+  host: filer-ll
+  path: ./target/filer-ll.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis

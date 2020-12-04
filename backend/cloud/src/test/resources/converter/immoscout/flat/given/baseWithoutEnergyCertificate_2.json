@@ -1,0 +1,165 @@
+{
+  "id": 1,
+  "customer": {
+    "name": "Fabian Beck Immobilien"
+  },
+  "user": {
+    "profile": {
+      "firstname": "Fabian",
+      "name": "Beck"
+    }
+  },
+  "prioset": {
+    "data": {
+      "wbs": true
+    }
+  },
+  "externalId": 1,
+  "data": {
+    "name": "WGH-Herrenhausen eG",
+    "size": 64.82,
+    "attic": false,
+    "floor": 1,
+    "rooms": 3.0,
+    "garden": false,
+    "ground": "OTHER",
+    "heater": "CENTRAL",
+    "address": {
+      "city": "Hannover-Stöcken",
+      "region": "Niedersachsen",
+      "street": "Baumgartenstr.",
+      "country": "DE",
+      "zipCode": "30419",
+      "additional": null,
+      "coordinates": {
+        "latitude": 52.41034,
+        "longitude": 9.65682
+      },
+      "houseNumber": "22"
+    },
+    "contact": null,
+    "seniors": false,
+    "bailment": 1375.0,
+    "elevator": false,
+    "flatType": "FLOOR",
+    "landArea": null,
+    "basePrice": 438.0,
+    "bathRooms": null,
+    "documents": [],
+    "fireplace": false,
+    "flatShare": false,
+    "gardenUse": false,
+    "houseType": null,
+    "storeRoom": false,
+    "externalId": null,
+    "garageData": null,
+    "gardenArea": null,
+    "objectType": "FLAT",
+    "tvSatCable": false,
+    "attachments": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-d7ebaf00acd04787a1455517283d19f6.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 0,
+        "title": "Bild 1",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "d7ebaf00acd04787a1455517283d19f6"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-916b3a3c1f0e499c8ec4921691c7fdc3.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 1,
+        "title": "Bild 2",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "916b3a3c1f0e499c8ec4921691c7fdc3"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-654673fbad6c46798096aba624440309.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 2,
+        "title": "Bild 3",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "654673fbad6c46798096aba624440309"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-373e7c0b77b443308198e7d990de01eb.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 3,
+        "title": "Bild 4",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "373e7c0b77b443308198e7d990de01eb"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-f41f7f684f6c46bdae37f4d1e3022d22.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 4,
+        "title": "01740111.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "f41f7f684f6c46bdae37f4d1e3022d22"
+      }
+    ],
+    "barrierFree": false,
+    "bicycleRoom": false,
+    "heatingCost": 60.0,
+    "kitchenette": false,
+    "referenceId": "1.174.111",
+    "showAddress": true,
+    "showContact": false,
+    "washDryRoom": false,
+    "basementSize": null,
+    "availableFrom": "01.09.2020",
+    "guestToilette": false,
+    "parkingSpaces": null,
+    "serviceCharge": 118.0,
+    "commercialData": null,
+    "furnishingType": null,
+    "numberOfFloors": null,
+    "previousTenant": {
+      "name": "Lieder",
+      "email": null,
+      "phone": "0157-39491134",
+      "firstname": "Anna-Sophie"
+    },
+    "totalRentGross": 616.0,
+    "temporaryLiving": null,
+    "constructionYear": "1952",
+    "historicBuilding": false,
+    "numberOfBedrooms": null,
+    "numberOfTerraces": null,
+    "basementAvailable": null,
+    "bathroomEquipment": null,
+    "buildingCondition": "NO_INFORMATION",
+    "energyCertificate": {
+      "creationDate": "MAY_2014",
+      "usageCertificate": null,
+      "demandCertificate": {
+        "endEnergyConsumption": "97.1",
+        "energyEfficiencyClass": "C"
+      },
+      "yearOfConstruction": 1952,
+      "energyCertificateType": "DEMAND_IDENTIFICATION",
+      "primaryEnergyProvider": "GAS",
+      "primaryEnergyConsumption": null
+    },
+    "lastRefurbishment": null,
+    "numberOfBalconies": 1,
+    "objectDescription": "Wohnen bei der WGH-Herrenhausen eG im ruhigen Stadtteil von Stöcken. Der Stöckener Markt (Wochenmarkt freitags von 08:00-13:00 Uhr) ist in wenigen Minuten zu erreichen. Weitere Einkaufsmöglichkeiten, Ärzte und das VW-Werk befinden sich in unmittelbarer Nähe. Der Stöckener Wald lädt zu erholsamen Spaziergängen ein.\nDie Bahnhaltestelle ist fußläufig erreichbar und mit geringer Fahrzeit wird mit den Linien 4 und 5 die City von Hannover erreicht. Weitere Verkehrsanbindungen bieten die B6 und die Autobahn in unmittelbarer Nähe.\n\nDie modernisierte 3 Zimmerwohnung liegt im I. Obergeschoss eines Mehrfamilienhauses. Das Badezimmer ist mit einer Einbauwanne ausgestattet und verfügt über ein Fenster. Die Fassadendämmung und der Balkonanbau erfolgten im letzten Jahr!\nFür die Aufnahme in die Genossenschaft ist mit dem Beitritt eine Servicepauschale von 85,--  im Zusammenhang mit der Mitgliedsaufnahme zu entrichten.",
+    "totalParkingPrice": 0.0,
+    "balconyTerraceArea": null,
+    "objectLocationText": "links",
+    "heatingCostIncluded": false,
+    "furnishingDescription": null,
+    "objectMiscellaneousText": null,
+    "parkingPriceIncludedToAdditionalCosts": false
+  }
+}

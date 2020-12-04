@@ -1,0 +1,10 @@
+server:
+  port: 8006
+spring:
+  devtools:
+    restart:
+      enabled: false
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: mail-sender

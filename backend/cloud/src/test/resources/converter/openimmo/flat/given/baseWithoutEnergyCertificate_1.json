@@ -1,0 +1,141 @@
+{
+  "aktion": "CHANGE",
+  "supplierNumber": "test",
+  "applicationLink": "http://www.test.de",
+  "shortDescription": "Test Objektbeschreibung",
+  "defaultContactEmail": "test@immomio.de",
+  "countryCode": "DEU",
+  "now": "2020-06-16T00:00:00Z",
+  "property": {
+    "id": 1,
+    "customer": {
+      "name": "Fabian Beck Immobilien"
+    },
+    "user": {
+      "profile": {
+        "firstname": "Fabian",
+        "name": "Beck"
+      }
+    },
+    "prioset": {
+      "data": {
+        "wbs": true
+      }
+    },
+    "externalId": 1,
+    "data": {
+      "name": "Freies Büro in Hamburg in der Elmenhorststraße 1, 22767 Hamburg, DE",
+      "size": 50.0,
+      "attic": true,
+      "floor": 3,
+      "rooms": 10,
+      "garden": true,
+      "ground": "LAMINATE",
+      "heater": "CENTRAL",
+      "address": {
+        "city": "Hamburg",
+        "region": "Hamburg",
+        "street": "Schwarzbuchenweg",
+        "country": "DE",
+        "zipCode": "22391",
+        "district" : "wellingsbüttel",
+        "additional": null,
+        "coordinates": null,
+        "houseNumber": "1"
+      },
+      "contact": null,
+      "seniors": true,
+      "bailment": 2000.0,
+      "elevator": true,
+      "flatType": "LOFT",
+      "landArea": null,
+      "basePrice": 1000.0,
+      "bathRooms": 2,
+      "documents": [],
+      "fireplace": true,
+      "flatShare": true,
+      "gardenUse": true,
+      "houseType": null,
+      "storeRoom": true,
+      "externalId": null,
+      "garageData": null,
+      "gardenArea": 20,
+      "objectType": "FLAT",
+      "tvSatCable": true,
+      "attachments": [],
+      "barrierFree": true,
+      "bicycleRoom": true,
+      "heatingCost": 100,
+      "kitchenette": true,
+      "referenceId": 1,
+      "showAddress": true,
+      "showContact": false,
+      "washDryRoom": true,
+      "shutter": true,
+      "basementSize": 30,
+      "availableFrom": {
+        "dateAvailable": "2020-06-16",
+        "stringAvailable": null
+      },
+      "guestToilette": true,
+      "parkingSpaces": [
+        {
+          "type": "GARAGE",
+          "price": 50,
+          "count": 2
+        },
+        {
+          "type": "UNDERGROUND_CAR_PARK",
+          "price": 50,
+          "count": 2
+        },
+        {
+          "type": "CARPORT",
+          "price": 50,
+          "count": 2
+        },
+        {
+          "type": "FREE_SPACE",
+          "price": 50,
+          "count": 2
+        }
+      ],
+      "serviceCharge": 100,
+      "commercialData": null,
+      "furnishingType": "FULL",
+      "numberOfFloors": 3,
+      "previousTenant": {
+        "firstname": "TestFabian",
+        "name": "TestBeck",
+        "email": "fbeck@immomio.de",
+        "phone": 1111
+      },
+      "totalRentGross": null,
+      "temporaryLiving": null,
+      "constructionYear": "2000",
+      "historicBuilding": true,
+      "numberOfBedrooms": 2,
+      "numberOfTerraces": 3,
+      "basementAvailable": true,
+      "bathroomEquipment": {
+        "shower": true,
+        "bathtub": true,
+        "window": true,
+        "bidet": true,
+        "urinal": true
+      },
+      "buildingCondition": "MINT_CONDITION",
+      "energyCertificate": null,
+      "lastRefurbishment": "2010",
+      "numberOfBalconies": 2,
+      "objectDescription": "Test Objektbeschreibung",
+      "totalParkingPrice": null,
+      "balconyTerraceArea": 80,
+      "objectLocationText": "Test Lage",
+      "heatingCostIncluded": false,
+      "furnishingDescription": "Test Ausstatt",
+      "objectMiscellaneousText": "Test sonstige Angaben",
+      "parkingPriceIncludedToAdditionalCosts": false
+    }
+  }
+}

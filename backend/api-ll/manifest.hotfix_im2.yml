@@ -1,0 +1,19 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 1024M
+domain: htf.immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: hotfix
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 13.+ } }'
+applications:
+  - name: api-ll
+    host: api-ll
+    path: ./target/api-ll.jar
+    services:
+      - htf-geomPSQL
+      - htf-rabbitmq
+      - htf-redis
+      - htf-elasticsearch-ssl

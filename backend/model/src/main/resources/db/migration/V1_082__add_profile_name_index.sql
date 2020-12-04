@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS idx_profile_name_mail ON propertysearcher.user (email, (profile ->> 'name'), (profile ->> 'firstname'));

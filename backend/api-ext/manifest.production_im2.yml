@@ -1,0 +1,21 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 3G
+disk_quota: 2G
+domain: immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: production
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 13.+ } }'
+applications:
+- name: api-ext
+  host: api-ext
+  path: ./target/api-ext.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis
+  - prod-elasticsearch-ssl

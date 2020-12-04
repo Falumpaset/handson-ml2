@@ -1,0 +1,20 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 3G
+domain: stg.immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: staging
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 13.+ } }'
+applications:
+  - name: api-ll-test
+    host: api-ll
+    path: ./target/api-ll.jar
+    services:
+      - stg-geomPSQL
+      - stg-rabbitmq
+      - stg-redis
+      - stg-elasticsearch-ssl
+      - stg-newrelic

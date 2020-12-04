@@ -1,0 +1,1 @@
+create index if not exists fki_fk_property_04 on landlord.property(prioset_id)

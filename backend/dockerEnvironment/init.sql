@@ -1,0 +1,3 @@
+CREATE DATABASE sonar;
+CREATE DATABASE immomio_2;
+CREATE DATABASE "immomio_2-test";

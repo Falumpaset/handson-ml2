@@ -1,0 +1,41 @@
+{
+  "jsonPayload": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "select2": {
+          "title": "Select with titleMap (old style)",
+          "type": "string",
+          "enum": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        "array": {
+          "title": "Array with enum defaults to 'checkboxes'",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [ "a", "b", "c" ]
+          }
+        }
+      }
+    },
+    "form": [
+      {
+        "key": "select2",
+        "type": "select",
+        "titleMap": {
+          "a": "A",
+          "b": "B",
+          "c": "C"
+        }
+      }
+    ]
+  },
+  "scoring": true,
+  "desiredResponses": {
+    "select2": "c"
+  }
+}

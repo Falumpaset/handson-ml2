@@ -1,0 +1,1 @@
+alter table propertysearcher.custom_question_response  ADD COLUMN comment VARCHAR(2000);

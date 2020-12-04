@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: importer
+---
+spring:
+  profiles: production
+server:
+  port: 8080

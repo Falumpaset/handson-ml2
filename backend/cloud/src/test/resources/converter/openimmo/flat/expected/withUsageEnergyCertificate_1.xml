@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+            <objektkategorie>
+                <nutzungsart WOHNEN="true" GEWERBE="false"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <wohnung wohnungtyp="LOFT-STUDIO-ATELIER"></wohnung>
+                </objektart>
+            </objektkategorie>
+            <geo>
+                <plz>47665</plz>
+                <ort>Sonsbeck</ort>
+                <strasse>Haubachstraße</strasse>
+                <hausnummer>44</hausnummer>
+                <bundesland>Nordrhein-Westfalen</bundesland>
+                <land iso_land="DEU"></land>
+                <etage>1</etage>
+                <anzahl_etagen>2</anzahl_etagen>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>test@immomio.de</email_zentrale>
+                <email_direkt>test@immomio.de</email_direkt>
+                <name>Beck</name>
+                <vorname>Fabian</vorname>
+                <firma>Fabian Beck Immobilien</firma>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>400.00</kaltmiete>
+                <nebenkosten>20.00</nebenkosten>
+                <heizkosten_enthalten>true</heizkosten_enthalten>
+                <gesamtmietebrutto>440.00</gesamtmietebrutto>
+                <courtage_hinweis>Keine</courtage_hinweis>
+                <kaution>100.00</kaution>
+                <stp_tiefgarage stellplatzmiete="20.00" anzahl="1"></stp_tiefgarage>
+            </preise>
+            <flaechen>
+                <wohnflaeche>55.0</wohnflaeche>
+                <anzahl_zimmer>3.0</anzahl_zimmer>
+                <anzahl_badezimmer>2.0</anzahl_badezimmer>
+                <kellerflaeche>10.0</kellerflaeche>
+                <anzahl_stellplaetze>1.0</anzahl_stellplaetze>
+            </flaechen>
+            <ausstattung>
+                <wg_geeignet>false</wg_geeignet>
+                <bad DUSCHE="false" WANNE="false" FENSTER="false" BIDET="false" PISSOIR="false"></bad>
+                <kueche EBK="false"></kueche>
+                <boden LAMINAT="true"></boden>
+                <kamin>true</kamin>
+                <heizungsart OFEN="true"></heizungsart>
+                <befeuerung SOLAR="true"></befeuerung>
+                <fahrstuhl PERSONEN="false"></fahrstuhl>
+                <stellplatzart TIEFGARAGE="true"></stellplatzart>
+                <gartennutzung>true</gartennutzung>
+                <moebliert></moebliert>
+                <kabel_sat_tv>true</kabel_sat_tv>
+                <barrierefrei>false</barrierefrei>
+                <wasch_trockenraum>false</wasch_trockenraum>
+                <abstellraum>false</abstellraum>
+                <fahrradraum>true</fahrradraum>
+                <dachboden>true</dachboden>
+                <rolladen>false</rolladen>
+                <gaestewc>false</gaestewc>
+                <seniorengerecht>false</seniorengerecht>
+            </ausstattung>
+            <zustand_angaben>
+                <baujahr>2020</baujahr>
+                <zustand zustand_art="ERSTBEZUG"></zustand>
+                <energiepass>
+                    <epart>VERBRAUCH</epart>
+                    <energieverbrauchkennwert>100</energieverbrauchkennwert>
+                    <mitwarmwasser>false</mitwarmwasser>
+                    <!-- Werte  für Epass ab 2014 -->
+                    <primaerenergietraeger>SOLAR</primaerenergietraeger>
+                    <baujahr>2020</baujahr>
+                    <jahrgang>2014</jahrgang>
+                </energiepass>
+            </zustand_angaben>
+            <freitexte>
+                <objekttitel>3 Zimmer in Sonsbeck</objekttitel>
+                <lage>Liegt auf dem Boden</lage>
+                <ausstatt_beschr>liegt</ausstatt_beschr>
+                <objektbeschreibung>Test Objektbeschreibung</objektbeschreibung>
+                <sonstige_angaben>test</sonstige_angaben>
+            </freitexte>
+            <anhaenge>
+                <anhang location="REMOTE" gruppe="LINKS">
+                    <anhangtitel>Interessentenlink</anhangtitel>
+                    <daten>
+                        <pfad>http://www.test.de</pfad>
+                    </daten>
+                </anhang>
+            </anhaenge>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab>morgen</verfuegbar_ab>
+                <wbs_sozialwohnung>true</wbs_sozialwohnung>
+                <denkmalgeschuetzt>false</denkmalgeschuetzt>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>1</objektnr_intern>
+                <objektnr_extern>1</objektnr_extern>
+                <aktion aktionart="CHANGE"></aktion>
+                <openimmo_obid>1</openimmo_obid>
+                <stand_vom>2020-06-16T00:00:00Z</stand_vom>
+            </verwaltung_techn>
+        </immobilie>
+    </anbieter>
+</openimmo>

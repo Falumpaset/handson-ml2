@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column mail_config jsonb;

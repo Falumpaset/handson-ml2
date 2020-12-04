@@ -1,0 +1,1 @@
+create unique index if not exists uidx_external_id on shared.shorturl(externalid)

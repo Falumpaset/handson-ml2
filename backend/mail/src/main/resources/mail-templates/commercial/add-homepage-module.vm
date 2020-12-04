@@ -1,0 +1,19 @@
+#parse('/mail-templates/general/header.vm')
+<tr class="">
+    <td align="left" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+        <p>#msg("commercial.add.homepage.module.intro")</p>
+        <p>Company: $customer.name</p>
+        <p>Email: $user.email</p>
+        #if ($customer.address)
+        <p>
+            $customer.address.street $customer.address.houseNumber
+            <br/>
+            $customer.address.zipCode $customer.address.city
+        </p>
+        #end
+        <p>#msg("commercial.add.homepage.module.main")</p>
+        <p>#msg("commercial.add.homepage.module.main.price") $setupPrice €.</p>
+    </td>
+</tr>
+#parse('/mail-templates/general/footer.vm')

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openimmo>
+    <uebertragung modus="NEW" umfang="TEIL"/>
+    <anbieter>
+        <immobilie>
+            <objektkategorie>
+                <nutzungsart GEWERBE="false" WOHNEN="true"/>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"/>
+                <objektart/>
+            </objektkategorie>
+            <geo>
+                <plz>60486</plz>
+                <ort>Frankfurt am Main</ort>
+                <geokoordinaten breitengrad="0" laengengrad="0"/>
+                <strasse>Schloßstraße</strasse>
+                <hausnummer>30</hausnummer>
+                <bundesland>Hessen</bundesland>
+                <land iso_land="DEU"/>
+                <etage>4</etage>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>kunde@gwh.de</email_zentrale>
+                <tel_zentrale>069975513000</tel_zentrale>
+                <name></name>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>1234567.89</kaltmiete>
+                <nebenkosten>1337.0</nebenkosten>
+                <heizkosten_enthalten>true</heizkosten_enthalten>
+                <kaution>3703703.67</kaution>
+            </preise>
+            <flaechen>
+                <wohnflaeche>59.57</wohnflaeche>
+                <gesamtflaeche>59.57</gesamtflaeche>
+                <anzahl_zimmer>3.0</anzahl_zimmer>
+                <anzahl_terrassen>1.0</anzahl_terrassen>
+            </flaechen>
+            <ausstattung>
+                <bad DUSCHE="true" FENSTER="true" WANNE="true"/>
+                <kueche EBK="true" OFFEN="true"/>
+                <boden ESTRICH="true"/>
+                <heizungsart FUSSBODEN="true"/>
+                <befeuerung GAS="true"/>
+                <fahrstuhl PERSONEN="true"/>
+                <kabel_sat_tv>true</kabel_sat_tv>
+                <wintergarten>true</wintergarten>
+                <unterkellert keller="JA"/>
+                <abstellraum>true</abstellraum>
+                <rolladen>true</rolladen>
+                <gaestewc>true</gaestewc>
+                <user_defined_simplefield feldname="gegensprechanlage"></user_defined_simplefield>
+
+            </ausstattung>
+            <zustand_angaben>
+                <baujahr>1953</baujahr>
+                <energiepass>
+                    <epart>VERBRAUCH</epart>
+                    <energieverbrauchkennwert>190</energieverbrauchkennwert>
+                    <mitwarmwasser>false</mitwarmwasser>
+                    <endenergiebedarf></endenergiebedarf>
+                    <wertklasse>F</wertklasse>
+                    <ausstelldatum>2018-07-04</ausstelldatum>
+                    <jahrgang></jahrgang>
+                </energiepass>
+            </zustand_angaben>
+            <freitexte>
+                <objekttitel>Wohnung   02  Rechts test</objekttitel>
+                <lage>Bockenheim</lage>
+                <ausstatt_beschr></ausstatt_beschr>
+                <objektbeschreibung></objektbeschreibung>
+                <sonstige_angaben></sonstige_angaben>
+            </freitexte>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab>01.08.2020</verfuegbar_ab>
+                <wbs_sozialwohnung>true</wbs_sozialwohnung>
+                <denkmalgeschuetzt>true</denkmalgeschuetzt>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>MO 1600/10401/10</objektnr_intern>
+                <objektnr_extern>IM00100011760</objektnr_extern>
+                <aktion aktionart="CHANGE"/>
+                <openimmo_obid/>
+                <stand_vom>2020-07-24</stand_vom>
+            </verwaltung_techn>
+        </immobilie>
+    </anbieter>
+</openimmo>

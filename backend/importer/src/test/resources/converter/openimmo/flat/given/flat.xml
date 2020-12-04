@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+            <objektkategorie>
+                <nutzungsart WOHNEN="true" GEWERBE="false"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <wohnung wohnungtyp="LOFT-STUDIO-ATELIER"></wohnung>
+                </objektart>
+            </objektkategorie>
+            <geo>
+                <plz>22391</plz>
+                <ort>Hamburg</ort>
+                <strasse>Elmenhorststraße</strasse>
+                <hausnummer>1</hausnummer>
+                <bundesland>Hamburg</bundesland>
+                <land iso_land="DEU"></land>
+                <etage>3</etage>
+                <anzahl_etagen>3</anzahl_etagen>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>test@immomio.de</email_zentrale>
+                <email_direkt>test@immomio.de</email_direkt>
+                <name>Beck</name>
+                <vorname>Fabian</vorname>
+                <firma>Fabian Beck Immobilien</firma>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>1000.00</kaltmiete>
+                <nebenkosten>100.00</nebenkosten>
+                <heizkosten_enthalten>false</heizkosten_enthalten>
+                <heizkosten>100.00</heizkosten>
+                <gesamtmietebrutto>1400.00</gesamtmietebrutto>
+                <courtage_hinweis>Keine</courtage_hinweis>
+                <kaution>2000.00</kaution>
+                <stp_carport stellplatzmiete="50.00" anzahl="2"></stp_carport>
+                <stp_freiplatz stellplatzmiete="50.00" anzahl="2"></stp_freiplatz>
+                <stp_garage stellplatzmiete="50.00" anzahl="2"></stp_garage>
+                <stp_tiefgarage stellplatzmiete="50.00" anzahl="2"></stp_tiefgarage>
+            </preise>
+            <flaechen>
+                <wohnflaeche>50.0</wohnflaeche>
+                <anzahl_zimmer>10.0</anzahl_zimmer>
+                <anzahl_schlafzimmer>2.0</anzahl_schlafzimmer>
+                <anzahl_badezimmer>2.0</anzahl_badezimmer>
+                <anzahl_balkone>2.0</anzahl_balkone>
+                <anzahl_terrassen>3.0</anzahl_terrassen>
+                <balkon_terrasse_flaeche>80.0</balkon_terrasse_flaeche>
+                <gartenflaeche>20.0</gartenflaeche>
+                <kellerflaeche>30.0</kellerflaeche>
+                <anzahl_stellplaetze>8.0</anzahl_stellplaetze>
+            </flaechen>
+            <ausstattung>
+                <wg_geeignet>true</wg_geeignet>
+                <bad DUSCHE="true" WANNE="true" FENSTER="true" BIDET="true" PISSOIR="true"></bad>
+                <kueche EBK="true"></kueche>
+                <boden LAMINAT="true"></boden>
+                <kamin>true</kamin>
+                <heizungsart ZENTRAL="true"></heizungsart>
+                <fahrstuhl PERSONEN="true"></fahrstuhl>
+                <stellplatzart GARAGE="true"></stellplatzart>
+                <stellplatzart TIEFGARAGE="true"></stellplatzart>
+                <stellplatzart CARPORT="true"></stellplatzart>
+                <stellplatzart FREIPLATZ="true"></stellplatzart>
+                <gartennutzung>true</gartennutzung>
+                <moebliert moeb="VOLL"></moebliert>
+                <kabel_sat_tv>true</kabel_sat_tv>
+                <barrierefrei>true</barrierefrei>
+                <wasch_trockenraum>true</wasch_trockenraum>
+                <abstellraum>true</abstellraum>
+                <fahrradraum>true</fahrradraum>
+                <dachboden>true</dachboden>
+                <gaestewc>true</gaestewc>
+                <seniorengerecht>true</seniorengerecht>
+            </ausstattung>
+            <zustand_angaben>
+                <baujahr>2000</baujahr>
+                <letztemodernisierung>2010</letztemodernisierung>
+                <zustand zustand_art="NEUWERTIG"></zustand>
+                <energiepass xsi:nil="true"></energiepass>
+                <energiepass xsi:nil="true"></energiepass>
+            </zustand_angaben>
+            <freitexte>
+                <objekttitel>Freies Büro in Hamburg in der Elmenhorststraße 1, 22767 Hamburg, DE</objekttitel>
+                <lage>Test Lage</lage>
+                <ausstatt_beschr>Test Ausstatt</ausstatt_beschr>
+                <objektbeschreibung>Test Objektbeschreibung</objektbeschreibung>
+                <sonstige_angaben>Test sonstige Angaben</sonstige_angaben>
+            </freitexte>
+            <anhaenge>
+                <anhang location="REMOTE" gruppe="LINKS">
+                    <anhangtitel>Interessentenlink</anhangtitel>
+                    <daten>
+                        <pfad>http://www.test.de</pfad>
+                    </daten>
+                </anhang>
+            </anhaenge>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab/>
+                <wbs_sozialwohnung>true</wbs_sozialwohnung>
+                <denkmalgeschuetzt>true</denkmalgeschuetzt>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>1</objektnr_intern>
+                <objektnr_extern>1</objektnr_extern>
+                <aktion aktionart="CHANGE"></aktion>
+                <openimmo_obid>1</openimmo_obid>
+                <stand_vom>2020-06-16T00:00:00Z</stand_vom>
+            </verwaltung_techn>
+            <user_defined_simplefield feldname="vormieter_vorname">TestFabian</user_defined_simplefield>
+            <user_defined_simplefield feldname="vormieter_nachname">TestBeck</user_defined_simplefield>
+            <user_defined_simplefield feldname="vormieter_email">fbeck@immomio.de</user_defined_simplefield>
+            <user_defined_simplefield feldname="vormieter_telefon">1111</user_defined_simplefield>
+        </immobilie>
+    </anbieter>
+</openimmo>

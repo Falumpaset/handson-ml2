@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column internal_pool_return_url varchar(255);

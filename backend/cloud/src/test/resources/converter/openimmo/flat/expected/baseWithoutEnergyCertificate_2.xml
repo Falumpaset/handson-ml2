@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+            <objektkategorie>
+                <nutzungsart WOHNEN="true" GEWERBE="false"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <wohnung wohnungtyp="ETAGE"></wohnung>
+                </objektart>
+            </objektkategorie>
+            <geo>
+                <plz>30419</plz>
+                <ort>Hannover-Stöcken</ort>
+                <geokoordinaten breitengrad="52.41034" laengengrad="9.65682"></geokoordinaten>
+                <strasse>Baumgartenstr.</strasse>
+                <hausnummer>22</hausnummer>
+                <bundesland>Niedersachsen</bundesland>
+                <land iso_land="DEU"></land>
+                <etage>1</etage>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>test@immomio.de</email_zentrale>
+                <email_direkt>test@immomio.de</email_direkt>
+                <name>Beck</name>
+                <vorname>Fabian</vorname>
+                <firma>Fabian Beck Immobilien</firma>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>438.00</kaltmiete>
+                <nebenkosten>118.00</nebenkosten>
+                <heizkosten_enthalten>false</heizkosten_enthalten>
+                <heizkosten>60.00</heizkosten>
+                <gesamtmietebrutto>616.00</gesamtmietebrutto>
+                <courtage_hinweis>Keine</courtage_hinweis>
+                <kaution>1375.00</kaution>
+            </preise>
+            <flaechen>
+                <wohnflaeche>64.82</wohnflaeche>
+                <anzahl_zimmer>3.0</anzahl_zimmer>
+                <anzahl_stellplaetze>0.0</anzahl_stellplaetze>
+            </flaechen>
+            <ausstattung>
+                <wg_geeignet>false</wg_geeignet>
+                <kueche EBK="false"></kueche>
+                <boden></boden>
+                <kamin>false</kamin>
+                <heizungsart ZENTRAL="true"></heizungsart>
+                <befeuerung GAS="true"></befeuerung>
+                <fahrstuhl PERSONEN="false"></fahrstuhl>
+                <gartennutzung>false</gartennutzung>
+                <moebliert></moebliert>
+                <kabel_sat_tv>false</kabel_sat_tv>
+                <barrierefrei>false</barrierefrei>
+                <wasch_trockenraum>false</wasch_trockenraum>
+                <abstellraum>false</abstellraum>
+                <fahrradraum>false</fahrradraum>
+                <dachboden>false</dachboden>
+                <rolladen>false</rolladen>
+                <gaestewc>false</gaestewc>
+                <seniorengerecht>false</seniorengerecht>
+            </ausstattung>
+            <zustand_angaben>
+                <baujahr>1952</baujahr>
+                <zustand></zustand>
+                <energiepass>
+                    <epart>BEDARF</epart>
+                    <endenergiebedarf>97.1</endenergiebedarf>
+                    <primaerenergietraeger>GAS</primaerenergietraeger>
+                    <wertklasse>C</wertklasse>
+                    <baujahr>1952</baujahr>
+                    <jahrgang>2014</jahrgang>
+                </energiepass>
+            </zustand_angaben>
+            <freitexte>
+                <objekttitel>WGH-Herrenhausen eG</objekttitel>
+                <lage>links</lage>
+                <objektbeschreibung>Test Objektbeschreibung</objektbeschreibung>
+            </freitexte>
+            <anhaenge>
+                <anhang location="EXTERN" gruppe="TITELBILD">
+                    <anhangtitel>Bild 1</anhangtitel>
+                    <format>jpg</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>IMG-d7ebaf00acd04787a1455517283d19f6.jpg</pfad>
+                    </daten>
+                </anhang>
+                <anhang location="EXTERN" gruppe="BILD">
+                    <anhangtitel>Bild 2</anhangtitel>
+                    <format>jpg</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>IMG-916b3a3c1f0e499c8ec4921691c7fdc3.jpg</pfad>
+                    </daten>
+                </anhang>
+                <anhang location="EXTERN" gruppe="BILD">
+                    <anhangtitel>Bild 3</anhangtitel>
+                    <format>jpg</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>IMG-654673fbad6c46798096aba624440309.jpg</pfad>
+                    </daten>
+                </anhang>
+                <anhang location="EXTERN" gruppe="BILD">
+                    <anhangtitel>Bild 4</anhangtitel>
+                    <format>jpg</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>IMG-373e7c0b77b443308198e7d990de01eb.jpg</pfad>
+                    </daten>
+                </anhang>
+                <anhang location="EXTERN" gruppe="BILD">
+                    <anhangtitel>01740111.jpg</anhangtitel>
+                    <format>jpg</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>IMG-f41f7f684f6c46bdae37f4d1e3022d22.jpg</pfad>
+                    </daten>
+                </anhang>
+                <anhang gruppe="DOKUMENTE" location="EXTERN">
+                    <anhangtitel>rundgang</anhangtitel>
+                    <format>pdf</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>PDF-89c872f819744f29914ab4d194c3ac45.pdf</pfad>
+                    </daten>
+                </anhang>
+                <anhang gruppe="DOKUMENTE" location="EXTERN">
+                    <anhangtitel>rundgang1</anhangtitel>
+                    <format>pdf</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>PDF-5f7813bd5b8c4943948e5c2ebc636e38.pdf</pfad>
+                    </daten>
+                </anhang>
+                <anhang gruppe="DOKUMENTE" location="EXTERN">
+                    <anhangtitel>rundgang2</anhangtitel>
+                    <format>pdf</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>PDF-fae893c365a946eea32547761fbd685c.pdf</pfad>
+                    </daten>
+                </anhang>
+                <anhang gruppe="GRUNDRISS" location="EXTERN">
+                    <anhangtitel>expose</anhangtitel>
+                    <format>pdf</format>
+                    <check ctype="DATETIME">2020-06-16T00:00:00Z</check>
+                    <daten>
+                        <pfad>PDF-5ebb9036e34d43d9b6839953c3d80dc3.pdf</pfad>
+                    </daten>
+                </anhang>
+                <anhang location="REMOTE" gruppe="LINKS">
+                    <anhangtitel>Interessentenlink</anhangtitel>
+                    <daten>
+                        <pfad>http://www.test.de</pfad>
+                    </daten>
+                </anhang>
+            </anhaenge>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab>01.09.2020</verfuegbar_ab>
+                <wbs_sozialwohnung>true</wbs_sozialwohnung>
+                <denkmalgeschuetzt>false</denkmalgeschuetzt>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>1</objektnr_intern>
+                <objektnr_extern>1</objektnr_extern>
+                <aktion aktionart="CHANGE"></aktion>
+                <openimmo_obid>1</openimmo_obid>
+                <stand_vom>2020-06-16T00:00:00Z</stand_vom>
+            </verwaltung_techn>
+        </immobilie>
+    </anbieter>
+</openimmo>

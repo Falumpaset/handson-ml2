@@ -1,0 +1,2 @@
+alter type shared.digital_contract_signer_history_state add value 'INTERNAL_SCHUFA_FAILED';
+alter type shared.digital_contract_signer_history_state add value 'INTERNAL_ITP_CODE_VERIFICATION_FAILED';

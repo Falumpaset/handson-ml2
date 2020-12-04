@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column allow_continue_as_guest boolean default true not null;

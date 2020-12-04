@@ -1,0 +1,156 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 1024M
+domain: immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: production, cloud
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 14.+ } }'
+  JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+  JAVA_OPTS: '-XX:+ShowCodeDetailsInExceptionMessages'
+
+
+applications:
+- name: api-ll
+  host: api-ll
+  memory: 3G
+  disk_quota: 2G
+  instances: 3
+  path: api-ll/target/api-ll.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: filer-ll
+  host: filer-ll
+  instances: 1
+  timeout: 180
+  memory: 8G
+  disk_quota: 3G
+  path: filer-ll/target/filer-ll.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: api-ps
+  host: api-ps
+  memory: 3G
+  disk_quota: 2G
+  instances: 3
+  path: api-ps/target/api-ps.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: filer-ps
+  host: filer-ps
+  instances: 1
+  timeout: 180
+  memory: 4G
+  disk_quota: 2G
+  path: filer-ps/target/filer-ps.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-newrelic
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: api-srv
+  host: api-srv
+  memory: 1024M
+  path: api-srv/target/api-srv.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: mail-sender
+  host: mse
+  instances: 1
+  timeout: 180
+  memory: 2G
+  disk_quota: 2G
+  path: mail-sender/target/mail-sender.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: shorturl-redirect
+  host: rdr
+  instances: 1
+  timeout: 180
+  memory: 1024M
+  disk_quota: 512M
+  path: shorturl-redirect/target/shorturl-redirect.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+- name: crawler
+  host: cwl
+  instances: 1
+  timeout: 180
+  memory: 4G
+  disk_quota: 2G
+  path: crawler/target/crawler.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: importer-worker
+  host: imp-wkr
+  instances: 1
+  timeout: 180
+  memory: 3G
+  disk_quota: 2G
+  path: importer-worker/target/importer-worker.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-elasticsearch-ssl
+- name: broker
+  host: brk
+  instances: 2
+  timeout: 180
+  memory: 3G
+  disk_quota: 2G
+  path: broker/target/broker.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-redis
+  - prod-elasticsearch-ssl
+- name: recipient
+  host: rcp
+  instances: 1
+  timeout: 180
+  memory: 2G
+  disk_quota: 2G
+  path: recipient/target/recipient.jar
+  services:
+  - prod-geomPSQL
+  - prod-rabbitmq
+  - prod-redis
+  - prod-elasticsearch-ssl
+
+- name: api-ext
+  host: api-ext
+  instances: 1
+  timeout: 180
+  memory: 3G
+  disk_quota: 2G
+  path: api-ext/target/api-ext.jar
+  services:
+    - prod-geomPSQL
+    - prod-rabbitmq
+    - prod-elasticsearch-ssl
+    - prod-redis

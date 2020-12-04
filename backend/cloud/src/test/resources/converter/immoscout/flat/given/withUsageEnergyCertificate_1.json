@@ -1,0 +1,120 @@
+{
+  "id": 1,
+  "customer": {
+    "name": "Fabian Beck Immobilien"
+  },
+  "user": {
+    "profile": {
+      "firstname": "Fabian",
+      "name": "Beck"
+    }
+  },
+  "prioset": {
+    "data": {
+      "wbs": true
+    }
+  },
+  "externalId": 1,
+  "data": {
+    "name": "3 Zimmer in Sonsbeck",
+    "size": 55.0,
+    "attic": true,
+    "floor": 1,
+    "rooms": 3.0,
+    "garden": true,
+    "ground": "LAMINATE",
+    "heater": "OVEN",
+    "address": {
+      "city": "Sonsbeck",
+      "region": "Nordrhein-Westfalen",
+      "street": "Haubachstraße",
+      "country": "DE",
+      "zipCode": "47665",
+      "additional": null,
+      "houseNumber": "44"
+    },
+    "contact": null,
+    "seniors": false,
+    "bailment": 100.0,
+    "elevator": false,
+    "flatType": "LOFT",
+    "landArea": null,
+    "basePrice": 400.0,
+    "bathRooms": 2,
+    "documents": [],
+    "fireplace": true,
+    "flatShare": false,
+    "gardenUse": true,
+    "houseType": null,
+    "storeRoom": false,
+    "externalId": null,
+    "garageData": null,
+    "gardenArea": null,
+    "objectType": "FLAT",
+    "tvSatCable": true,
+    "attachments": [],
+    "barrierFree": false,
+    "bicycleRoom": true,
+    "heatingCost": null,
+    "kitchenette": false,
+    "referenceId": null,
+    "showAddress": true,
+    "showContact": false,
+    "washDryRoom": false,
+    "basementSize": 10.0,
+    "availableFrom": "morgen",
+    "guestToilette": false,
+    "parkingSpaces": [
+      {
+        "type": "UNDERGROUND_CAR_PARK",
+        "count": 1,
+        "price": 20.0
+      }
+    ],
+    "serviceCharge": 20.0,
+    "commercialData": null,
+    "furnishingType": null,
+    "numberOfFloors": 2,
+    "previousTenant": null,
+    "totalRentGross": 440.0,
+    "temporaryLiving": null,
+    "constructionYear": "2020",
+    "historicBuilding": false,
+    "numberOfBedrooms": null,
+    "numberOfTerraces": null,
+    "basementAvailable": null,
+    "bathroomEquipment": {
+      "bidet": false,
+      "shower": false,
+      "urinal": false,
+      "window": false,
+      "bathtub": false
+    },
+    "buildingCondition": "FIRST_TIME_USE",
+    "energyCertificate": {
+      "creationDate": "MAY_2014",
+      "usageCertificate": {
+        "energyConsumption": "100",
+        "energyEfficiencyClass": "A_P",
+        "includesHeatConsumption": false,
+        "energyConsumptionParameter": null
+      },
+      "demandCertificate": null,
+      "yearOfConstruction": 2020,
+      "energyCertificateType": "USAGE_IDENTIFICATION",
+      "primaryEnergyProvider": "SOLAR",
+      "primaryEnergyConsumption": "100"
+    },
+    "lastRefurbishment": null,
+    "numberOfBalconies": 1,
+    "objectDescription": "liegt",
+    "totalParkingPrice": 20.0,
+    "balconyTerraceArea": null,
+    "objectLocationText": "Liegt auf dem Boden",
+    "heatingCostIncluded": true,
+    "furnishingDescription": "liegt",
+    "objectMiscellaneousText": "test",
+    "washingMachineConnection": false,
+    "parkingPriceIncludedToAdditionalCosts": false
+  }
+}

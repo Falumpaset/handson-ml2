@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<business>
+    <name>Immomio GmbH</name>
+    <street>Grimm 12</street>
+    <postalCode>20457</postalCode>
+    <phone>+49 40 - 1813 5522</phone>
+    <url>www.immomio.de</url>
+    <email>rechnung@immomio.de</email>
+    <city>Hamburg</city>
+    <country>DE</country>
+    <ceo>Nicolas Jacobi</ceo>
+    <taxId>DE297626954</taxId>
+    <bank>
+        <name>Hamburger Sparkasse</name>
+        <bic>HASPDEHHXXX</bic>
+        <account>
+            <iban>DE61 2005 0550 1002 2689 91</iban>
+        </account>
+    </bank>
+    <customerservice>
+        <phone>+49 40 882 159 890</phone>
+        <url>www.immomio.de</url>
+        <email>rechnung@immomio.de</email>
+    </customerservice>
+    <letterhead>
+        <name>Immomio GmbH</name>
+        <street>Grimm 12</street>
+        <city>20457 Hamburg</city>
+    </letterhead>
+</business>

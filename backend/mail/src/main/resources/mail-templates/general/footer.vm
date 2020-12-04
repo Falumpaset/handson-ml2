@@ -1,0 +1,49 @@
+<tr>
+    <td align="left" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+      #msg("general.footer.thanks") <br/> $footer
+    </td>
+</tr>
+<tr>
+    <td height="44" style="height: 44px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+</tr>
+#if (!$ignoredisclaimer)
+<tr>
+    <td align="center" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 12px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+        <p><strong>#msg("general.footer.disclaimer")</strong></p>
+    </td>
+</tr>
+#end
+</tbody>
+</table>
+</td>
+<td width="50" class="margins" style="width: 50px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+</tr>
+</tbody>
+</table>
+<table id="footer" align="center" width="500" cellpadding="0" cellspacing="0" border="0"
+       style="width: 500px; background-color: rgb(255,255,255); padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+    <tbody>
+    <tr>
+        <td colspan="3" height="10"
+            style="height: 10px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+            <span class="address" style="border: 0px; font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(136,153,166); font-size: 12px; padding: 0px; margin: 0px; font-weight: normal; line-height: 12px; cursor: default;">
+                #msg("general.footer.company") #msg("general.footer.address")
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td height="26" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+    </tr>
+    </tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</html>

@@ -1,0 +1,1 @@
+alter type shared.applicationstate add value 'PRE_TENANT_VIEWING';

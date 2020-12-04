@@ -1,0 +1,34 @@
+test
+asasdf.yxüvkad
+aadsf.a-dö
+<<<
+<<<
+>>>
+asdasd
+
+Am Do., 28. Mai 2020 um 13:39 Uhr schrieb Immomio <
+messages+095c5f6d-bd7e-4a3a-9b5e-1a9fda224908@immomio.de>:
+
+> Bitte bestätige deine E-Mail-Adresse, um die Anmeldung abzuschließen.
+> [image: Immomio] <http://www.immomio.com>
+>
+> Sie haben eine neue Nachricht bezüglich Ihrer Bewerbung zu dieser Wohnung
+> erhalten
+> Hallo $user.profile.firstname $user.profile.name,
+>
+> testtt
+>
+> Diese Nachricht bezieht sich auf folgende Wohnung:
+> [image: Wohnungsbild]
+>
+> $property.data.name
+> Gesamtmiete: $property.totalRentGross € / Monat
+> Wohnfläche: $property.data.size m²
+> Zimmer: $property.data.rooms
+> Stadt:
+> $property.data.address.zipCode $property.data.address.city
+> Viele Grüße
+> Ihr Immomio Team
+> Bitte nicht auf diese E-Mail antworten. Dies ist eine automatisch
+> generierte E-Mail von Immomio
+>

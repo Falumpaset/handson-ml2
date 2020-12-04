@@ -1,0 +1,7 @@
+---
+timeout: 180
+instances: 1
+memory: 1024M
+disk_quota: 1024M
+path: target/api-ll.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git

@@ -1,0 +1,21 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 2048M
+domain: itg.immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: integration, cloud
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 14.+ } }'
+  JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+  JAVA_OPTS: '-XX:+ShowCodeDetailsInExceptionMessages'
+applications:
+  - name: broker
+    host: brk
+    path: ./target/broker.jar
+    services:
+      - itg-geomPSQL
+      - itg-rabbitmq
+      - itg-redis
+      - itg-elasticsearch-ssl

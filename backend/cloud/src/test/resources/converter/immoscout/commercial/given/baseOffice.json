@@ -1,0 +1,252 @@
+{
+  "id": 1,
+  "customer": {
+    "name": "Fabian Beck Immobilien"
+  },
+  "user": {
+    "profile": {
+      "firstname": "Fabian",
+      "name": "Beck"
+    }
+  },
+  "externalId": "Test1",
+  "data": {
+    "name": "Laden / Bürofläche  in der Göttinger Chaussee  242, Hannover",
+    "size": 85.0,
+    "attic": false,
+    "floor": 0,
+    "rooms": null,
+    "garden": false,
+    "ground": null,
+    "heater": null,
+    "address": {
+      "city": "Hannover",
+      "region": "Niedersachsen",
+      "street": "Göttinger Chaussee ",
+      "country": "DE",
+      "zipCode": "30459",
+      "additional": null,
+      "coordinates": {
+        "latitude": 52.33412999999999,
+        "longitude": 9.71644
+      },
+      "houseNumber": "242"
+    },
+    "contact": null,
+    "seniors": false,
+    "bailment": 3000.0,
+    "elevator": false,
+    "flatType": null,
+    "landArea": null,
+    "basePrice": 1020.0,
+    "bathRooms": 0,
+    "documents": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-doc-store/PDF-164926796be74a1982102d7824ff4980.jpg",
+        "name": null,
+        "type": "FLOOR_PLAN",
+        "index": 0,
+        "title": "Haus 242 Laden.JPG",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "164926796be74a1982102d7824ff4980"
+      }
+    ],
+    "fireplace": false,
+    "flatShare": false,
+    "gardenUse": false,
+    "houseType": null,
+    "storeRoom": false,
+    "externalId": null,
+    "garageData": null,
+    "gardenArea": null,
+    "objectType": "OFFICE",
+    "tvSatCable": false,
+    "attachments": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-ca6916e2db9f46d2b750945109c01aa0.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 0,
+        "title": "IMG_9556.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "ca6916e2db9f46d2b750945109c01aa0"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-20ade69c5e8a4332b1da87070c873bb1.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 1,
+        "title": "IMG_8472.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "20ade69c5e8a4332b1da87070c873bb1"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-d772d447388e442692651f9ddfe2e491.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 2,
+        "title": "IMG_9542.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "d772d447388e442692651f9ddfe2e491"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-57847c5fc3934716b5613bf9fb78f646.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 3,
+        "title": "IMG_9543.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "57847c5fc3934716b5613bf9fb78f646"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-c1f11b39df1b414bbb068d5ce786526f.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 4,
+        "title": "IMG_9544.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "c1f11b39df1b414bbb068d5ce786526f"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-9359ee5b1dd64d03b992a931dfe548c8.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 5,
+        "title": "IMG_9545.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "9359ee5b1dd64d03b992a931dfe548c8"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-a5cd8f3fe34e41e29ac9cd40bc392c3a.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 6,
+        "title": "IMG_9546.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "a5cd8f3fe34e41e29ac9cd40bc392c3a"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-68ca2e730cf84af18cd939227e236709.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 7,
+        "title": "IMG_9547.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "68ca2e730cf84af18cd939227e236709"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-844a18e9f1fd4e29a9f61d8c23a09a8d.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 8,
+        "title": "IMG_9548.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "844a18e9f1fd4e29a9f61d8c23a09a8d"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-f9d1184d9c5d47c789f1eecae3d33695.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 9,
+        "title": "IMG_9549.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "f9d1184d9c5d47c789f1eecae3d33695"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-prod-img-store/IMG-0f5d2ee77b7c4d449bf5e77396eca268.jpg",
+        "name": null,
+        "type": "IMG",
+        "index": 10,
+        "title": "IMG_9550.jpg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "0f5d2ee77b7c4d449bf5e77396eca268"
+      }
+    ],
+    "barrierFree": false,
+    "bicycleRoom": false,
+    "heatingCost": 0.0,
+    "kitchenette": false,
+    "referenceId": null,
+    "showAddress": true,
+    "showContact": false,
+    "washDryRoom": false,
+    "basementSize": 8.0,
+    "availableFrom": "01.10.2020",
+    "guestToilette": false,
+    "parkingSpaces": [
+      {
+        "type": "FREE_SPACE",
+        "count": 2,
+        "price": 17.5
+      }
+    ],
+    "serviceCharge": 180.0,
+    "commercialData": {
+      "lanCables": false,
+      "hasCanteen": false,
+      "officeType": "SHARED_OFFICE",
+      "highVoltage": false,
+      "airConditioning": false,
+      "distanceToAirport": null,
+      "distanceToHighway": null,
+      "pricePerSquareMeter": 12.0,
+      "distanceToTrainStation": null,
+      "distanceToPublicTransport": null
+    },
+    "furnishingType": null,
+    "numberOfFloors": 0,
+    "previousTenant": null,
+    "totalRentGross": 1235.0,
+    "temporaryLiving": null,
+    "constructionYear": "1996",
+    "historicBuilding": false,
+    "numberOfBedrooms": null,
+    "numberOfTerraces": null,
+    "basementAvailable": null,
+    "bathroomEquipment": {
+      "bidet": false,
+      "shower": false,
+      "urinal": false,
+      "window": false,
+      "bathtub": false
+    },
+    "buildingCondition": "NO_INFORMATION",
+    "energyCertificate": {
+      "creationDate": "APRIL_2014",
+      "usageCertificate": {
+        "energyConsumption": "93.5",
+        "energyEfficiencyClass": null,
+        "includesHeatConsumption": true,
+        "energyConsumptionParameter": null
+      },
+      "demandCertificate": null,
+      "yearOfConstruction": 1996,
+      "energyCertificateType": "USAGE_IDENTIFICATION",
+      "primaryEnergyProvider": "GAS",
+      "primaryEnergyConsumption": "145.3"
+    },
+    "lastRefurbishment": null,
+    "numberOfBalconies": null,
+    "objectDescription": "Ladenfläche in Ladenzeile. Der Laden bietet vielfältige Nutzungsmöglichkeiten. Auf der Rückseite des Ladens ist noch eine eingezäunte Freifläche mit vermietet. Verkaufsfläche ca. 60 und Nebenräume ca. 25 Quadratmeter. Zum Laden gehört auch ein Kellerraum.\n\nDie Fotos sind nicht aktuell und können abweichen.\n\n",
+    "totalParkingPrice": 35.0,
+    "balconyTerraceArea": null,
+    "objectLocationText": "",
+    "heatingCostIncluded": false,
+    "furnishingDescription": "",
+    "objectMiscellaneousText": "Anfragen bitte nur über die Anfragefunktion in diesem Portal. Aufgrund der vielen Anfragen können wir keine telefonischen Bewerbungen entgegennehmen. Wir arbeiten mit dem Bewerbungsportal immomio.de zusammen. Damit wir sie vorab etwas kennen lernen können, ist es ratsam, sich bei immomio.de ein Profil anzulegen.\n\nDer Mieter zahlt folgende Betriebskosten direkt an das Versorgungsunternehmen: Strom\n\nAuf dem Hof können zwei PKW-Einstellplätze angemietet werden. Die Miete beträgt 17,50 Euro pro Stellplatz.\n\nSofern auf der Mietfläche umsatzsteuerpflichtige Umsätze erzielt werden, ist die Miete zzgl. Umsatzsteuer zu zahlen.",
+    "washingMachineConnection": false,
+    "parkingPriceIncludedToAdditionalCosts": false
+  }
+}

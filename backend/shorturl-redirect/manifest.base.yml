@@ -1,0 +1,7 @@
+---
+timeout: 180
+instances: 1
+memory: 1G
+disk_quota: 512M
+path: target/shorturl-redirect.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git

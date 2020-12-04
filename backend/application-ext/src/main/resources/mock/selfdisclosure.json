@@ -1,0 +1,131 @@
+{
+  "tenant": {
+    "personDetails": {
+      "firstName": "Frank",
+      "lastName": "Gersten",
+      "birthDate": "1987-11-08T00:00:00.000+00:00",
+      "birthPlace": "München"
+    },
+    "addressDetails": {
+      "city": "München",
+      "street": "Rhinstrasse",
+      "houseNumber": "43",
+      "zipCode": "80902",
+      "phone": "01589224545",
+      "email": "frank.gersten@email.com",
+      "federalProvince" : "München"
+    },
+    "employmentDetails": {
+      "job": "Klempner",
+      "employer": "Haustechnik GmbH",
+      "netIncome": 2200.0
+    },
+    "checkedAnswers": [
+      {
+        "question": "Finanzielle Verpflichtungen",
+        "answer": true,
+        "comment": "bis 20.01.2025\n300 €/ Monat"
+      },
+      {
+        "question": "Bestehen wiederkehrende Zahlungsverpflichtungen (z.B. Raten, Unterhalt etc.)?",
+        "answer": false
+      },
+      {
+        "question": "Ist ein Räumungstitel ergangen?",
+        "answer": false
+      },
+      {
+        "question": "Haben Sie eine Privatinsolvenz beantragt?",
+        "answer": false
+      }
+    ]
+  },
+  "property": {
+    "id" : "1-324-2",
+    "name": "Schöne 3-Zimmer-Wohnung mit Blick ins Grüne",
+    "address": {
+      "city": "Hamburg",
+      "street": "Sülldorfer Mühlenweg",
+      "houseNumber": "8",
+      "zipCode": "22589"
+    },
+    "floor": 0,
+    "rent": 600.13,
+    "heatingCost": 180.0,
+    "additionalCosts": 110.0,
+    "rooms": 3.0,
+    "size": 80.99
+  },
+  "fellowTenants": [
+    {
+      "personDetails": {
+        "firstName": "Johanna",
+        "lastName": "Koertig",
+        "birthDate": "1977-09-09T00:00:00.000+00:00",
+        "birthPlace": "Grünhain"
+      },
+      "addressDetails": {
+        "city": "Grünhain",
+        "street": "Schoenebergerstrasse",
+        "houseNumber": "90",
+        "zipCode": "08358",
+        "phone": "01665875455",
+        "email": "johanna.koertig@mail.com"
+      },
+      "employmentDetails": {
+        "job": "Erzieherin",
+        "employer": "Kleine Kita e.V.",
+        "netIncome": 1400.0
+      },
+      "checkedAnswers": [
+        {
+          "question": "Finanzielle Verpflichtungen",
+          "answer": false
+        },
+        {
+          "question": "Bestehen wiederkehrende Zahlungsverpflichtungen (z.B. Raten, Unterhalt etc.)?",
+          "answer": false
+        },
+        {
+          "question": "Ist ein Räumungstitel ergangen?",
+          "answer": true
+        },
+        {
+          "question": "Haben Sie eine Privatinsolvenz beantragt?",
+          "answer": true
+        }
+      ]
+    }
+  ],
+  "furtherResidents": [
+    {
+      "firstName": "Andrea",
+      "lastName": "Schiffer",
+      "birthDate": "1996-05-01T00:00:00.000+00:00"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Oster",
+      "birthDate": "2010-10-05T00:00:00.000+00:00"
+    }
+  ],
+  "checkedAnswers": [
+    {
+      "question": "Haben Sie einen Wohnberechtigungsschein?",
+      "answer": false
+    }
+  ],
+  "documents": [
+    {
+      "description": "Einkommensnachweis",
+      "fileName": "einkommensnachweis.png"
+    },
+    {
+      "description": "Bonitaetsauskunft",
+      "fileName": "schufa.png"
+    }
+  ],
+  "confirmations": [
+    "Ich habe die Datenschutzhinweise zur Kenntnis genommen"
+  ]
+}

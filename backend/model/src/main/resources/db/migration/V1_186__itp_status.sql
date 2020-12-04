@@ -1,0 +1,1 @@
+alter type shared.digital_contract_itp_state add value 'INTERNAL_CANCELED';

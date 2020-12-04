@@ -1,0 +1,112 @@
+{
+  "externalId": "1",
+  "title": "Laden / Bürofläche  in der Göttinger Chaussee  242, Hannover",
+  "creationDate": null,
+  "lastModificationDate": null,
+  "address": {
+    "street": "Göttinger Chaussee ",
+    "houseNumber": "242",
+    "postcode": "30459",
+    "city": "Hannover",
+    "internationalCountryRegion": {
+      "country": "DEU",
+      "region": "Niedersachsen"
+    },
+    "quarter": null,
+    "wgs84Coordinate": null,
+    "preciseHouseNumber": null,
+    "geoHierarchy": null,
+    "description": null
+  },
+  "apiSearchData": null,
+  "realEstateState": "ACTIVE",
+  "id": null,
+  "groupNumber": null,
+  "descriptionNote": "Ladenfläche in Ladenzeile. Der Laden bietet vielfältige Nutzungsmöglichkeiten. Auf der Rückseite des Ladens ist noch eine eingezäunte Freifläche mit vermietet. Verkaufsfläche ca. 60 und Nebenräume ca. 25 Quadratmeter. Zum Laden gehört auch ein Kellerraum.\n\nDie Fotos sind nicht aktuell und können abweichen.\n\n",
+  "furnishingNote": "",
+  "locationNote": "",
+  "otherNote": "Anfragen bitte nur über die Anfragefunktion in diesem Portal. Aufgrund der vielen Anfragen können wir keine telefonischen Bewerbungen entgegennehmen. Wir arbeiten mit dem Bewerbungsportal immomio.de zusammen. Damit wir sie vorab etwas kennen lernen können, ist es ratsam, sich bei immomio.de ein Profil anzulegen.\n\nDer Mieter zahlt folgende Betriebskosten direkt an das Versorgungsunternehmen: Strom\n\nAuf dem Hof können zwei PKW-Einstellplätze angemietet werden. Die Miete beträgt 17,50 Euro pro Stellplatz.\n\nSofern auf der Mietfläche umsatzsteuerpflichtige Umsätze erzielt werden, ist die Miete zzgl. Umsatzsteuer zu zahlen.",
+  "attachments": null,
+  "referencePriceServiceCall": null,
+  "referencePriceApiCall": null,
+  "realEstateProjectId": null,
+  "showAddress": true,
+  "contact": null,
+  "publishChannels": null,
+  "officeType": "OFFICE",
+  "lift": "NOT_APPLICABLE",
+  "cellar": "YES",
+  "handicappedAccessible": "NOT_APPLICABLE",
+  "flooringType": "NO_INFORMATION",
+  "deposit": "3.000,00 €",
+  "hasCanteen": "NOT_APPLICABLE",
+  "lanCables": "NO",
+  "highVoltage": "NOT_APPLICABLE",
+  "kitchenComplete": "NOT_APPLICABLE",
+  "listed": "NOT_APPLICABLE",
+  "airConditioning": "NO",
+  "officeRentDurations": null,
+  "energyCertificate": {
+    "energyCertificateAvailability": "AVAILABLE",
+    "energyCertificateCreationDate": "BEFORE_01_MAY_2014",
+    "energyEfficiencyClass": null,
+    "electricityConsumption": null,
+    "heatingConsumption": null,
+    "energyConsumptionElectricity": null,
+    "energyConsumptionHeating": null,
+    "thermalCharacteristicElectricity": null,
+    "thermalCharacteristicHeating": null
+  },
+  "distanceToMRS": null,
+  "distanceToFM": null,
+  "distanceToPT": null,
+  "distanceToAirport": null,
+  "condition": "NO_INFORMATION",
+  "numberOfParkingSpaces": 2,
+  "parkingSpacePrice": 17.5,
+  "lastRefurbishment": null,
+  "interiorQuality": null,
+  "constructionYear": 1996,
+  "constructionYearUnknown": null,
+  "freeFrom": "01.10.2020",
+  "heatingType": null,
+  "heatingTypeEnev2014": "NO_INFORMATION",
+  "firingTypes": null,
+  "energySourcesEnev2014": {
+    "energySourceEnev2014": [
+      "GAS"
+    ]
+  },
+  "thermalCharacteristic": null,
+  "energyConsumptionContainsWarmWater": "NOT_APPLICABLE",
+  "buildingEnergyRatingType": "ENERGY_CONSUMPTION",
+  "additionalArea": null,
+  "numberOfFloors": "0",
+  "additionalCosts": {
+    "value": 180.0,
+    "currency": "EUR",
+    "marketingType": "RENT",
+    "priceIntervalType": null
+  },
+  "commercializationType": "RENT",
+  "price": {
+    "value": 12.0,
+    "currency": "EUR",
+    "marketingType": "RENT_PER_SQM",
+    "priceIntervalType": null
+  },
+  "calculatedPrice": {
+    "value": 1235.0,
+    "currency": "EUR",
+    "marketingType": "RENT",
+    "priceIntervalType": null
+  },
+  "totalFloorSpace": null,
+  "netFloorSpace": 85.0,
+  "minDivisible": null,
+  "courtage": {
+    "hasCourtage": "NO",
+    "courtage": null,
+    "courtageNote": null
+  }
+}

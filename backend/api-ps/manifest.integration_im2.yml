@@ -1,0 +1,19 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 1024M
+domain: itg.immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: integration
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 13.+ } }'
+applications:
+  - name: api-ps-test
+    host: api-ps
+    path: ./target/api-ps.jar
+    services:
+      - itg-geomPSQL
+      - itg-rabbitmq
+      - itg-redis
+      - itg-elasticsearch-ssl

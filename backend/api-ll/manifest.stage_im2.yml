@@ -1,0 +1,12 @@
+---
+applications:
+- name: api-ll
+  host: api-ll
+  domain: itg.immomio.com
+  services:
+  - stg-mm-mongodb
+  - stg-mm-postgresql
+  - stg-mm-rabbitmq
+env:
+  SPRING_PROFILES_ACTIVE: integration
+  DEPLOYMENT_LOCATION: de

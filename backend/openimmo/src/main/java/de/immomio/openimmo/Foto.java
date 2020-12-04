@@ -1,0 +1,109 @@
+//
+// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
+// Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// �nderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2017.10.16 um 11:10:09 AM CEST 
+//
+
+package de.immomio.openimmo;
+
+import javax.xml.bind.annotation.*;
+
+/**
+ * <p>Java-Klasse f�r anonymous complex type.
+ * <p>
+ * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>
+ * <pre>
+ * &lt;complexType>
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element ref="{}format"/>
+ *         &lt;element ref="{}daten"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="location" use="required">
+ *         &lt;simpleType>
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;enumeration value="EXTERN"/>
+ *             &lt;enumeration value="REMOTE"/>
+ *           &lt;/restriction>
+ *         &lt;/simpleType>
+ *       &lt;/attribute>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+        "format",
+        "daten"
+})
+@XmlRootElement(name = "foto")
+public class Foto {
+
+    @XmlElement(required = true)
+    protected String format;
+
+    @XmlElement(required = true)
+    protected Daten daten;
+
+    @XmlAttribute(name = "location", required = true)
+    protected String location;
+
+    /**
+     * Ruft den Wert der format-Eigenschaft ab.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getFormat() {
+        return format;
+    }
+
+    /**
+     * Legt den Wert der format-Eigenschaft fest.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setFormat(String value) {
+        this.format = value;
+    }
+
+    /**
+     * Ruft den Wert der daten-Eigenschaft ab.
+     *
+     * @return possible object is {@link Daten }
+     */
+    public Daten getDaten() {
+        return daten;
+    }
+
+    /**
+     * Legt den Wert der daten-Eigenschaft fest.
+     *
+     * @param value allowed object is {@link Daten }
+     */
+    public void setDaten(Daten value) {
+        this.daten = value;
+    }
+
+    /**
+     * Ruft den Wert der location-Eigenschaft ab.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getLocation() {
+        return location;
+    }
+
+    /**
+     * Legt den Wert der location-Eigenschaft fest.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setLocation(String value) {
+        this.location = value;
+    }
+
+}

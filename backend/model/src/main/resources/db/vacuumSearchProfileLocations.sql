@@ -1,0 +1,1 @@
+VACUUM ANALYZE propertysearcher.searchprofile (location);

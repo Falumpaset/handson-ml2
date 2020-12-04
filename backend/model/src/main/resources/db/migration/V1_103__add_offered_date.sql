@@ -1,0 +1,1 @@
+alter table shared.propertyproposal ADD COLUMN offered timestamp without time zone;

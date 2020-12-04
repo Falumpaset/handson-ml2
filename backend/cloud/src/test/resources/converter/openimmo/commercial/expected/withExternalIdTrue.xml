@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+            <objektkategorie>
+                <nutzungsart WOHNEN="false" GEWERBE="true"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <buero_praxen buero_typ="BUEROFLAECHE"></buero_praxen>
+                </objektart>
+            </objektkategorie>
+            <geo>
+                <plz>22767</plz>
+                <ort>Hamburg</ort>
+                <strasse>Elmenhorststraße</strasse>
+                <hausnummer>1</hausnummer>
+                <bundesland>Hamburg</bundesland>
+                <land iso_land="DEU"></land>
+                <etage>3</etage>
+                <anzahl_etagen>3</anzahl_etagen>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>test@immomio.de</email_zentrale>
+                <email_direkt>test@immomio.de</email_direkt>
+                <name>Beck</name>
+                <vorname>Fabian</vorname>
+                <firma>Fabian Beck Immobilien</firma>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>1000.00</kaltmiete>
+                <nebenkosten>100.00</nebenkosten>
+                <gesamtmietebrutto>1500.00</gesamtmietebrutto>
+                <kaution>2000.00</kaution>
+                <stp_carport stellplatzmiete="50.00" anzahl="2"></stp_carport>
+                <stp_freiplatz stellplatzmiete="50.00" anzahl="2"></stp_freiplatz>
+                <stp_garage stellplatzmiete="50.00" anzahl="2"></stp_garage>
+                <stp_tiefgarage stellplatzmiete="50.00" anzahl="2"></stp_tiefgarage>
+            </preise>
+            <flaechen>
+                <bueroflaeche>50.0</bueroflaeche>
+                <kellerflaeche>30.0</kellerflaeche>
+                <anzahl_stellplaetze>8.0</anzahl_stellplaetze>
+            </flaechen>
+            <ausstattung>
+                <kueche EBK="true"></kueche>
+                <boden LAMINAT="true"></boden>
+                <klimatisiert>true</klimatisiert>
+                <fahrstuhl PERSONEN="true"></fahrstuhl>
+                <barrierefrei>true</barrierefrei>
+                <kantine_cafeteria>true</kantine_cafeteria>
+            </ausstattung>
+            <zustand_angaben>
+                <baujahr>2000</baujahr>
+                <letztemodernisierung>2010</letztemodernisierung>
+                <zustand zustand_art="NEUWERTIG"></zustand>
+                <energiepass xsi:nil="true"></energiepass>
+            </zustand_angaben>
+            <infrastruktur>
+                <distanzen distanz_zu="FERNBAHNHOF">10.0</distanzen>
+                <distanzen distanz_zu="AUTOBAHN">10.0</distanzen>
+                <distanzen distanz_zu="FLUGHAFEN">10.0</distanzen>
+                <distanzen distanz_zu="US_BAHN">10.0</distanzen>
+            </infrastruktur>
+            <freitexte>
+                <objekttitel>Freies Büro in Hamburg in der Elmenhorststraße 1, 22767 Hamburg, DE</objekttitel>
+                <lage>Test Lage</lage>
+                <ausstatt_beschr>Test Ausstatt</ausstatt_beschr>
+                <objektbeschreibung>Test Objektbeschreibung</objektbeschreibung>
+                <sonstige_angaben>Test sonstige Angaben</sonstige_angaben>
+            </freitexte>
+            <anhaenge>
+                <anhang location="REMOTE" gruppe="LINKS">
+                    <anhangtitel>Interessentenlink</anhangtitel>
+                    <daten>
+                        <pfad>http://www.test.de</pfad>
+                    </daten>
+                </anhang>
+            </anhaenge>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab>2020-06-16T00:00:00Z</verfuegbar_ab>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>1</objektnr_intern>
+                <objektnr_extern>Test1</objektnr_extern>
+                <aktion aktionart="CHANGE"></aktion>
+                <openimmo_obid>1</openimmo_obid>
+                <stand_vom>2020-06-16T00:00:00Z</stand_vom>
+            </verwaltung_techn>
+        </immobilie>
+    </anbieter>
+</openimmo>

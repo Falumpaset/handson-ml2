@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column display_itp_flags jsonb;

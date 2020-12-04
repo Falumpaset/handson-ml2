@@ -1,0 +1,30 @@
+database:
+  host: 127.0.0.1
+  user: postgres
+  password: sample123
+  base: immomio_2
+  url: jdbc:postgresql://127.0.0.1:5432/immomio_2
+  driver: org.postgresql.Driver
+
+  test:
+    host: 127.0.0.1
+    user: postgres
+    password: sample123
+    base: immomio_2-test
+    url: jdbc:postgresql://127.0.0.1:5432/immomio_2-test
+    driver: org.postgresql.Driver
+
+spring:
+  datasource:
+    continue-on-error: false
+  application:
+    name: model
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show_sql: true
+    generate-ddl: false
+    database-platform: de.immomio.config.dialect.CustomPostgreSqlDialect
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+            <objektkategorie>
+                <nutzungsart WOHNEN="true" GEWERBE="false"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <wohnung wohnungtyp="LOFT-STUDIO-ATELIER"></wohnung>
+                </objektart>
+            </objektkategorie>
+        </immobilie>
+    </anbieter>
+</openimmo>

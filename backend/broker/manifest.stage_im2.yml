@@ -1,0 +1,18 @@
+---
+applications:
+- name: broker
+  host: int-brk
+  domain: immomio.de
+  timeout: 180
+  instances: 1
+  memory: 1024M
+  disk_quota: 1024M
+  path: target/broker.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+  - stg-mm-mongodb
+  - stg-mm-postgresql
+  - stg-mm-rabbitmq
+  env:
+    SPRING_PROFILES_ACTIVE: integration, DE
+    DEPLOYMENT_LOCATION: DE

@@ -1,0 +1,1 @@
+ALTER TABLE shared.digital_contract_api_user  SET SCHEMA landlord;

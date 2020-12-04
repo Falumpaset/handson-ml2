@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<openimmo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <uebertragung art="ONLINE" umfang="TEIL" version="1.2.7" sendersoftware="Immomio"
+                  senderversion="1.0"></uebertragung>
+    <anbieter>
+        <anbieternr>jbbg402699</anbieternr>
+        <firma>test</firma>
+        <openimmo_anid>AIMIO16159437268522153127c0b5da</openimmo_anid>
+        <immobilie>
+            <objektkategorie>
+                <nutzungsart WOHNEN="false" GEWERBE="false" ANLAGE="true"></nutzungsart>
+                <vermarktungsart KAUF="false" MIETE_PACHT="true"></vermarktungsart>
+                <objektart>
+                    <parken parken_typ="DUPLEX"></parken>
+                </objektart>
+            </objektkategorie>
+            <geo>
+                <plz>22767</plz>
+                <ort>Hamburg</ort>
+                <strasse>Elmenhorststraße</strasse>
+                <hausnummer>1</hausnummer>
+                <bundesland>Hamburg</bundesland>
+                <land iso_land="DEU"></land>
+                <etage>3</etage>
+                <anzahl_etagen>3</anzahl_etagen>
+            </geo>
+            <kontaktperson>
+                <email_zentrale>test@immomio.de</email_zentrale>
+                <email_direkt>test@immomio.de</email_direkt>
+                <name>Beck</name>
+                <vorname>Fabian</vorname>
+                <firma>Fabian Beck Immobilien</firma>
+            </kontaktperson>
+            <preise>
+                <kaltmiete>1000.00</kaltmiete>
+                <kaution>2000.00</kaution>
+            </preise>
+            <flaechen>
+                <gesamtflaeche>50.0</gesamtflaeche>
+            </flaechen>
+            <zustand_angaben>
+                <baujahr>2000</baujahr>
+                <zustand zustand_art="NEUWERTIG"></zustand>
+                <energiepass xsi:nil="true"></energiepass>
+            </zustand_angaben>
+            <freitexte>
+                <objekttitel>Freie Garage in Hamburg in der Elmenhorststraße 1, 22767 Hamburg, DE</objekttitel>
+                <lage>Test Lage</lage>
+                <ausstatt_beschr>Test Ausstatt</ausstatt_beschr>
+                <objektbeschreibung>Test Objektbeschreibung</objektbeschreibung>
+                <sonstige_angaben>Test sonstige Angaben</sonstige_angaben>
+            </freitexte>
+            <anhaenge>
+                <anhang location="REMOTE" gruppe="LINKS">
+                    <anhangtitel>Interessentenlink</anhangtitel>
+                    <daten>
+                        <pfad>http://www.test.de</pfad>
+                    </daten>
+                </anhang>
+            </anhaenge>
+            <verwaltung_objekt>
+                <objektadresse_freigeben>true</objektadresse_freigeben>
+                <verfuegbar_ab>2020-06-17</verfuegbar_ab>
+                <bisdatum>2020-06-18T00:00:00Z</bisdatum>
+            </verwaltung_objekt>
+            <verwaltung_techn>
+                <objektnr_intern>1</objektnr_intern>
+                <objektnr_extern>1</objektnr_extern>
+                <aktion aktionart="CHANGE"></aktion>
+                <openimmo_obid>1</openimmo_obid>
+                <stand_vom>2020-06-16T00:00:00Z</stand_vom>
+            </verwaltung_techn>
+        </immobilie>
+    </anbieter>
+</openimmo>

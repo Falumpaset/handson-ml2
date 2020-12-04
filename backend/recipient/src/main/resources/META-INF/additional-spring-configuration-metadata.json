@@ -1,0 +1,29 @@
+//{
+//  "properties": [
+//    {
+//      "name": "auth.token.name",
+//      "type": "java.lang.String",
+//      "description": "A description for 'auth.token.name'"
+//    },
+//    {
+//      "name": "auth.encryption.enabled",
+//      "type": "java.lang.String",
+//      "description": "A description for 'auth.encryption.enabled'"
+//    },
+//    {
+//      "name": "auth.session.max-age",
+//      "type": "java.lang.String",
+//      "description": "A description for 'auth.session.max-age'"
+//    },
+//    {
+//      "name": "auth.encryption.seed",
+//      "type": "java.lang.String",
+//      "description": "A description for 'auth.encryption.seed'"
+//    },
+//    {
+//      "name": "receipient.email",
+//      "type": "java.lang.String",
+//      "description": "A description for 'receipient.email'"
+//    }
+//  ]
+//}

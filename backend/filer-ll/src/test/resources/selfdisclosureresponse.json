@@ -1,0 +1,298 @@
+{
+  "answers": {
+    "id": "",
+    "documents": [
+      "Bonität",
+      "Gehalt"
+    ],
+    "questions": [
+      {
+        "id": "2504524",
+        "type": "PERSON",
+        "title": "SELF_DISCLOSURE_PERSONAL_INFO_L",
+        "answer": {
+          "lastName": "Perrey-zwölf",
+          "birthDate": "1990-01-18T00:00:00.000+0000",
+          "birthName": "Perrey",
+          "firstName": "Heiner",
+          "birthPlace": "Hamburg"
+        },
+        "subQuestions": [
+          {
+            "type": "ADDRESS",
+            "title": "SELF_DISCLOSURE_CURRENT_ADDRESS_L",
+            "answer": {
+              "city": "Hamburg",
+              "email": "hperrey+int-ps-self-discl-12@immomio.de",
+              "phone": "555 5443 333",
+              "street": "Kieler Straße",
+              "zipCode": 22527,
+              "houseNumber": 12
+            },
+            "commentAllowed": false,
+            "showSelfDisclosureQuestions": true
+          },
+          {
+            "type": "EMPLOYMENT",
+            "title": "SELF_DISCLOSURE_EMPLOYMENT_L",
+            "answer": {
+              "job": "Lehrer",
+              "employer": "Schule",
+              "netIncome": 200
+            },
+            "commentAllowed": false,
+            "showSelfDisclosureQuestions": true
+          },
+          {
+            "type": "BOOLEAN",
+            "title": "SELF_DISCLOSURE_PAST_EVICTIONS_L",
+            "answer": false,
+            "commentAllowed": false,
+            "showSelfDisclosureQuestions": true
+          },
+          {
+            "type": "BOOLEAN",
+            "title": "SELF_DISCLOSURE_PRIVATE_BANKRUPTCY_L",
+            "answer": false,
+            "commentAllowed": false,
+            "showSelfDisclosureQuestions": true
+          },
+          {
+            "type": "BOOLEAN",
+            "title": "SELF_DISCLOSURE_LIST_OF_DEBTORS_L",
+            "answer": true,
+            "comment": "bis Ende 2020, 1000 € im Monat",
+            "commentHint": "SELF_DISCLOSURE_LIST_OF_DEBTORS_COMMENT_HINT_L",
+            "commentAllowed": true,
+            "showSelfDisclosureQuestions": true
+          }
+        ],
+        "confirmations": [
+          {
+            "text": "Sind Sie sicher?",
+            "checked": true
+          },
+          {
+            "text": "Gaaaaanz sicher?!?!",
+            "checked": true
+          }
+        ],
+        "showSelfDisclosureQuestions": true
+      },
+      {
+        "id": "2504525",
+        "type": "PERSONS",
+        "title": "SELF_DISCLOSURE_PERSONAL_INFO_TENANT_L",
+        "answer": [
+          {
+            "answer": {
+              "lastName": "Wurstmann",
+              "birthDate": "1990-01-24",
+              "birthName": "Meierschmidchen",
+              "firstName": "Peter",
+              "birthPlace": "Wald"
+            },
+            "subQuestions": [
+              {
+                "type": "ADDRESS",
+                "title": "SELF_DISCLOSURE_CURRENT_ADDRESS_L",
+                "answer": {
+                  "city": "Hamburg",
+                  "email": "tmail@test.de",
+                  "phone": "777 - 999 44444",
+                  "street": "Bollweg",
+                  "zipCode": 20535,
+                  "houseNumber": 5
+                },
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "EMPLOYMENT",
+                "title": "SELF_DISCLOSURE_EMPLOYMENT_L",
+                "answer": {
+                  "job": "Klempner",
+                  "employer": "Pümpel Peter",
+                  "netIncome": 600
+                },
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_PAST_EVICTIONS_L",
+                "answer": true,
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_PRIVATE_BANKRUPTCY_L",
+                "answer": false,
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_LIST_OF_DEBTORS_L",
+                "answer": true,
+                "comment": "nur noch bis nächste Woche",
+                "commentHint": "SELF_DISCLOSURE_LIST_OF_DEBTORS_COMMENT_HINT_L",
+                "commentAllowed": true,
+                "showSelfDisclosureQuestions": true
+              }
+            ],
+            "confirmations": [
+              {
+                "text": "Sind Sie sicher?",
+                "checked": true
+              },
+              {
+                "text": "Gaaaaanz sicher?!?!",
+                "checked": true
+              }
+            ]
+          },
+          {
+            "answer": {
+              "lastName": "Vollmann",
+              "birthDate": "1990-01-25",
+              "birthName": "Doofmann",
+              "firstName": "Erna",
+              "birthPlace": "Hamburg"
+            },
+            "subQuestions": [
+              {
+                "type": "ADDRESS",
+                "title": "SELF_DISCLOSURE_CURRENT_ADDRESS_L",
+                "answer": {
+                  "city": "Hamburg",
+                  "email": "erna.doofmann@test.de",
+                  "phone": "",
+                  "street": "Grimm",
+                  "zipCode": 20535,
+                  "houseNumber": 12
+                },
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "EMPLOYMENT",
+                "title": "SELF_DISCLOSURE_EMPLOYMENT_L",
+                "answer": {
+                  "job": "Friseur",
+                  "employer": "Cut&Paste",
+                  "netIncome": 1000
+                },
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_PAST_EVICTIONS_L",
+                "answer": false,
+                "question": {},
+                "mandatory": true,
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_PRIVATE_BANKRUPTCY_L",
+                "answer": false,
+                "question": {},
+                "mandatory": true,
+                "commentAllowed": false,
+                "showSelfDisclosureQuestions": true
+              },
+              {
+                "type": "BOOLEAN",
+                "title": "SELF_DISCLOSURE_LIST_OF_DEBTORS_L",
+                "answer": false,
+                "question": {},
+                "mandatory": true,
+                "commentHint": "SELF_DISCLOSURE_LIST_OF_DEBTORS_COMMENT_HINT_L",
+                "commentAllowed": true,
+                "showSelfDisclosureQuestions": true
+              }
+            ],
+            "confirmations": [
+              {
+                "text": "Sind Sie sicher?!",
+                "checked": true
+              },
+              {
+                "text": "Gaaaaanz sicher?!?!",
+                "checked": true
+              }
+            ]
+          }
+        ],
+        "showSelfDisclosureQuestions": true
+      },
+      {
+        "id": "2504526",
+        "type": "CHILDREN",
+        "title": "SELF_DISCLOSURE_CHILDREN_ADULT_L",
+        "answer": [
+          {
+            "answer": {
+              "lastName": "Herbert",
+              "birthDate": "1990-01-10",
+              "firstName": "Kitty"
+            }
+          },
+          {
+            "answer": {
+              "lastName": "Wurstmann",
+              "birthDate": "1990-01-03",
+              "firstName": "Anton"
+            }
+          }
+        ],
+        "showSelfDisclosureQuestions": true
+      },
+      {
+        "id": "2504527",
+        "type": "CHILDREN",
+        "title": "SELF_DISCLOSURE_CHILDREN_MINOR_L",
+        "answer": [
+          {
+            "answer": {
+              "lastName": "Wonker",
+              "birthDate": "2014-01-15",
+              "firstName": "Willi"
+            }
+          }
+        ],
+        "showSelfDisclosureQuestions": true
+      }
+    ],
+    "description": "Sie bekommen die Wohnung nicht. Sie sind sich ja überhaupt nicht sicher.",
+    "confirmations": [
+      "Sind Sie sicher?!",
+      "Gaaaaanz sicher?!?!"
+    ],
+    "feedbackEmail": "",
+    "uploadedDocuments": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-int-shared-doc-store/PDF-ffd1ddfe135a4c188468c81d1aef3b66.pdf",
+        "name": "PDF-9fc8e11500004fa2a35f3b63cd48cd03.pdf",
+        "type": "SHARED_DOCUMENT",
+        "title": "PDF-9fc8e11500004fa2a35f3b63cd48cd03.pdf",
+        "encrypted": false,
+        "extension": "pdf",
+        "identifier": "ffd1ddfe135a4c188468c81d1aef3b66"
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/immomio-int-shared-doc-store/PDF-b11de48352244edb91a8b0e5996b86b3.jpg",
+        "name": "altbau.jpeg",
+        "type": "SHARED_DOCUMENT",
+        "title": "altbau.jpeg",
+        "encrypted": false,
+        "extension": "jpg",
+        "identifier": "b11de48352244edb91a8b0e5996b86b3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+---
+testcases:
+
+- NACHNAME: Abweichend-Anders
+  VORNAME: Adelheid
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen übermittelt
+  GEBURTSDATUM: 1933-03-03
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bochum
+    PLZ: 44789
+    STRASSE: Königsallee 40
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-10
+
+- NACHNAME: Schnittstellentest
+  VORNAME: Manuela Elfi
+  MERKMALCODE: AM
+  KOMMENTAR: Der Testfall wird nur bei Anfragen und bei Vertragsmeldungen übermittelt
+  GEBURTSDATUM: 1977-07-07
+  GEBURTSORT: Abnahme TDS B2C
+  GESCHLECHT: w
+  AKTUELLE_ADRESSE:
+    ORT: Bayreuth
+    PLZ: 95448
+    STRASSE: Christian-Ritter-von-Langheinrich-Straße 10
+  CBI:
+    AKTION: SCHUFA2_ANFRAGE_BONITAETSAUSKUNFT
+    MAX_ALTER: 0s
+    VERSIONSNUMMER: 1.1
+    AKTUELLES_DATUM: 2019-07-02
+    VORGANGSNUMMER: 1-18

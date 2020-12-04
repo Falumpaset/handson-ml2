@@ -1,0 +1,19 @@
+{
+  "jsonPayload": {
+    "form": [
+      {
+        "key": "select2",
+        "type": "select",
+        "titleMap": {
+          "a": "A",
+          "b": "B",
+          "c": "C"
+        }
+      }
+    ]
+  },
+  "scoring": true,
+  "desiredResponses": {
+    "select2": "c"
+  }
+}

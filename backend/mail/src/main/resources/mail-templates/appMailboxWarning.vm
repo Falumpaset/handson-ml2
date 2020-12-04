@@ -1,0 +1,6 @@
+WARNING: Application-Mailbox contains $msgs.size() unread emails.<br/>
+<br/>
+<br/>
+#foreach($msg in $msgs)
+  $date.format('dd.MM.yyyy HH:mm', $msg.sentDate, $locale, $timezone) - $msg.subject <br/>
+#end

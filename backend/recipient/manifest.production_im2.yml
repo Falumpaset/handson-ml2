@@ -1,0 +1,20 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 1024M
+domain: immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: production
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 13.+ } }'
+applications:
+  - name: recipient
+    host: rcp
+    path: ./target/recipient.jar
+    services:
+      - prod-geomPSQL
+      - prod-rabbitmq
+      - prod-newrelic
+      - prod-redis
+      - prod-elasticsearch-ssl

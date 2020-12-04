@@ -1,0 +1,1 @@
+alter type shared.digital_contract_signer_history_state add value 'INTERNAL_ONSITE_DATA_VERIFIED';

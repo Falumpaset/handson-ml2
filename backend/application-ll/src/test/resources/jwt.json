@@ -1,0 +1,35 @@
+{
+  "jti": "3b750239-cc06-4d31-8d0a-d8bcea8667f8",
+  "exp": 1537642849,
+  "nbf": 0,
+  "iat": 1537639849,
+  "iss": "http://sso.itg.immomio.com/auth/realms/immomio",
+  "aud": "immomio-oidc",
+  "sub": "091cb41b-cb49-470b-87f1-c91899299534",
+  "typ": "Bearer",
+  "azp": "immomio-oidc",
+  "nonce": "c5b6687b-1e77-4ea3-944f-16fc0868d620",
+  "auth_time": 1537639849,
+  "session_state": "41932048-7e38-4474-ad8b-a7afee8c750d",
+  "acr": "1",
+  "allowed-origins": [],
+  "realm_access": {
+    "roles": [
+      "domain_admin",
+      "uma_authorization"
+    ]
+  },
+  "resource_access": {
+    "account": {
+      "roles": [
+        "manage-account",
+        "view-profile"
+      ]
+    }
+  },
+  "name": "FirstNameChanged LastNameChanged",
+  "preferred_username": "1000017",
+  "given_name": "FirstNameChanged",
+  "family_name": "LastNameChanged",
+  "email": "mbaumbach@immomio.de"
+}

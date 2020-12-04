@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    continue-on-error: false
+  application:
+    name: api-ps
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show_sql: true
+    generate-ddl: false
+    database-platform: de.immomio.config.dialect.CustomPostgreSqlDialect
+  flyway:
+    enabled: false
+
+api:
+  url: http://localhost:8080

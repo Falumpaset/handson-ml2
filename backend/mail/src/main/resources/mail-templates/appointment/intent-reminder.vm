@@ -1,0 +1,103 @@
+#parse('/mail-templates/general/header.vm')
+<tr class="">
+    <td align="left" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;" class="">
+		<span class="headline_1"
+              style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 28px; padding: 0px; margin: 0px; font-weight: 300; line-height: 28px; text-align: left;">
+            #msg("email.intent.head")
+        </span>
+    </td>
+</tr>
+<tr class="">
+    <td align="left" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+        #parse('/mail-templates/general/flat.vm')
+        #parse('/mail-templates/general/salutation.vm')
+        <p>#msg("email.intent.intro")</p>
+    </td>
+    <p align="center" class="body_text"
+       style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+    </p>
+</tr>
+<tr align="center">
+    <td align="center" class="m_8000625521315644663body_text"
+        style="font-family:'Helvetica Neue Light',Helvetica,Arial,sans-serif;color:rgb(102,117,127);font-size:16px;padding:0px;margin:0px;font-weight:300;line-height:23px;text-align:left;">
+        <table height="40" border="0" cellspacing="0" cellpadding="0"
+               align="left"
+               style="white-space:nowrap;border-style:none;text-align:center;padding-top:10px;padding-bottom:10px;margin:0px;line-height:1px;font-size:1px;width: 100%;">
+            <tbody>
+            <tr style="width: 100%;">
+
+                <td align="center" class="button"
+                    style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px; width: 50%">
+                    <table bgcolor="#FF5050" height="40" border="0" cellspacing="0" cellpadding="0" align="left"
+                           style="white-space: nowrap;     border-style: none; text-align: center; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;width: 160px"
+                           class="">
+                        <tbody>
+                        <tr>
+                            <td class="spacer" width="30"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                &nbsp;
+                            </td>
+                            <td height="40" align="center"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"
+                                class="">
+
+                                <a href="${return-url}/deny-intent?token=${token}"
+                                   style="color: rgb(255,255,255);  font-size: 14px; letter-spacing: 0.02em; font-weight: bold; white-space: nowrap; overflow: hidden; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 14px; text-decoration: none; border: 0px; padding: 0px; margin: 0px;"
+                                   class="" target="_blank">
+              <span class=""
+                    style="border-style: none; text-decoration: none; color: rgb(255,255,255); line-height: 14px;">
+                  #msg("application.no_intent.button")
+              </span>
+                                </a>
+
+                            </td>
+                            <td class="spacer" width="30"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td align="center" class="button"
+                    style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px; width: 50%">
+                    <table bgcolor="#36D571" height="40" border="0" cellspacing="0" cellpadding="0" align="left"
+                           style="white-space: nowrap;     border-style: none; text-align: center; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;width: 160px"
+                           class="">
+                        <tbody class="">
+                        <tr>
+                            <td class="spacer" width="30"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                &nbsp;
+                            </td>
+                            <td height="40" align="center"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"
+                                class="">
+
+                                <a href="${return-url}/confirm-intent/${application}"
+                                   style="color: rgb(255,255,255);  font-size: 14px; letter-spacing: 0.02em; font-weight: bold; white-space: nowrap; overflow: hidden; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 14px; text-decoration: none; border: 0px; padding: 0px; margin: 0px;"
+                                   class="" target="_blank">
+              <span class=""
+                    style="border-style: none; text-decoration: none; color: rgb(255,255,255); line-height: 14px;">
+                  #msg("application.intent.button")
+              </span>
+                                </a>
+
+                            </td>
+                            <td class="spacer" width="30"
+                                style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p></p>
+    </td>
+</tr>
+
+#parse('/mail-templates/general/footer.vm')

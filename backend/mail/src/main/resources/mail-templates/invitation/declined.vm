@@ -1,0 +1,57 @@
+#parse('/mail-templates/general/header.vm')
+<tr class="">
+    <td align="left" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;" class="">
+		<span class="headline_1"
+          style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 28px; padding: 0px; margin: 0px; font-weight: 300; line-height: 28px; text-align: left;">
+      #msg("invitation.declined.head")
+    </span>
+    </td>
+</tr>
+<tr class="">
+    <td height="12" class="v_space"
+        style="height: 12px; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"></td>
+</tr>
+<tr class="">
+    <td align="left" class="body_text"
+        style="font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  color: rgb(102,117,127); font-size: 16px; padding: 0px; margin: 0px; font-weight: 300; line-height: 23px; text-align: left;">
+      #parse('/mail-templates/general/flat.vm')
+      #parse('/mail-templates/general/salutation.vm')
+
+        <p>#msg("invitation.declined.intro")</p>
+        <p>#msg("invitation.declined.main")</p>
+    </td>
+</tr>
+
+<tr class="">
+    <td align="left" class="button" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+        <table bgcolor="#55acee" height="40" border="0" cellspacing="0" cellpadding="0" align="left"
+               style="white-space: nowrap;     border-style: none; text-align: center; padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"
+               class="">
+            <tbody class="">
+            <tr class="">
+                <td class="spacer" width="30" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    &nbsp;
+                </td>
+                <td height="40" align="center" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;"
+                    class="">
+
+                    <a href="$tenantapp/appointments"
+                       style="color: rgb(255,255,255);  font-size: 14px; letter-spacing: 0.02em; font-weight: bold; white-space: nowrap; overflow: hidden; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 14px; text-decoration: none; border: 0px; padding: 0px; margin: 0px;"
+                       class="" target="_blank">
+							<span class=""
+                    style="border-style: none; text-decoration: none; color: rgb(255,255,255); line-height: 14px;">
+                #msg("invitation.declined.button")
+              </span>
+                    </a>
+
+                </td>
+                <td class="spacer" width="30" style="padding: 0px; margin: 0px; line-height: 1px; font-size: 1px;">
+                    &nbsp;
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+
+#parse('/mail-templates/general/footer.vm')

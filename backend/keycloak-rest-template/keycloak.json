@@ -1,0 +1,12 @@
+{
+  "realm": "immomio-itg",
+  "auth-server-url": "http://sso.itg.immomio.com/auth",
+  "ssl-required": "none",
+  "resource": "public-immo-client",
+  "public-client": true,
+  "use-resource-role-mappings": true,
+  "confidential-port": 0,
+  "credentials": {
+    "secret": "secret"
+  }
+}

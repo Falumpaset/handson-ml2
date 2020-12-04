@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			  xmlns="http://jasperreports.sourceforge.net/jasperreports"
+			  xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+			  name="expose" pageWidth="595" pageHeight="850" columnWidth="555" leftMargin="20" rightMargin="20"
+			  topMargin="20" bottomMargin="20" isTitleNewPage="true" uuid="7c5b15b9-b938-4700-9b4e-d37e2f5c9691">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.components.map.key" value="AIzaSyCPew2cPSBzjvx4e-_EKetfOemEXrrvJz8"/>
+	<subDataset name="Dataset1" uuid="09272488-1f29-49bb-b6b7-59cae06bb51b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="15082bfa-8806-4ffd-a98f-56f665ccd666">
+		<field name="image" class="java.lang.String">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset3" uuid="15082bfa-8806-4ffd-a98f-56f665ccd667">
+		<field name="image" class="java.io.File">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="addressLongitude" class="java.lang.Double" isForPrompting="false"/>
+	<parameter name="addressLatitude" class="java.lang.Double" isForPrompting="false"/>
+	<parameter name="addressStreet" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="addressZip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="addressCity" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="addressCountry" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyImages" class="java.util.List" isForPrompting="false"/>
+	<parameter name="propertyName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="customerLogo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyPrice" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyDescription" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyLocationDescription" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyMainImage" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="balcony" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="propertySize" class="java.lang.Double" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="mapApiKey" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyRooms" class="java.lang.Double" isForPrompting="false"/>
+	<parameter name="priceBailment" class="java.lang.Double" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="propertyConstructionYear" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="objektId" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="priceHeatingCost" class="java.lang.Double" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="priceServiceCharge" class="java.lang.Double" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="priceTotalRent" class="java.lang.Double" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="propertyId" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="propertyAvailableFrom" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyFloor" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="companyName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="addressFull" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyBathRooms" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="contactEmail" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactPhone" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="floorPlanImage" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="heaterType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propertyCondition" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="addressHouseNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="roomsImage" class="java.io.InputStream" isForPrompting="false"/>
+	<parameter name="areaImage" class="java.io.InputStream" isForPrompting="false"/>
+	<parameter name="balconyImage" class="java.io.InputStream" isForPrompting="false"/>
+	<parameter name="fireplace" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="gardenUse" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="washDryRoom" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="storeRoom" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="bicycleRoom" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="attic" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="seniors" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="parking" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="furnishingDescription" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="objectMiscellaneousText" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="energyPerformanceCertificateType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="energyConsumption" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="energyCertificateCreationDate" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="includesHeatConsumption" class="java.lang.Boolean" isForPrompting="false"/>
+	<parameter name="googleTypeAddressFull" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="guestToilette" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="kitchenette" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="garden" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="hasBalcony" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="barrierFree" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="elevator" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="tvSatCable" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="numberOfFloors" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="propertySubType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="showAddress" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="floorPlanImages" class="java.util.List" isForPrompting="false"/>
+	<parameter name="bidet" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="shutter" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="loggias" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="intercomType" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="bathroomWindow" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="urinal" class="java.lang.Boolean" isForPrompting="false">
+		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+	</parameter>
+	<parameter name="wheelChair" class="java.lang.Boolean"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="90" splitType="Prevent">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="4" width="474" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="42e2a926-8722-4172-9343-9d81028dbc69">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyName}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement positionType="Float" x="5" y="5" width="60" height="60" backcolor="#F2F2F2" uuid="bc2666a0-c983-4fdc-9599-4b561d59add0">
+					<printWhenExpression><![CDATA[$P{customerLogo} != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{customerLogo}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="23" width="474" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#9FA9BA" uuid="3fbf94e9-be2f-4a0f-a840-af35a350757e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{showAddress}]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{addressStreet} + " " + $P{addressHouseNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="59" width="474" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="59714442-ca4e-457c-8c98-e3a45c98280b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyPrice} + " / Monat Kaltmiete"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="2">
+				<reportElement positionType="Float" stretchType="ElementGroupHeight" mode="Transparent" x="0" y="0" width="554" height="80" isPrintWhenDetailOverflows="true" uuid="ee2fc554-4f86-4ab5-a849-df3e21c62dbc"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#E6E6E6"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="41" width="474" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#9FA9BA" uuid="80ec53de-2b85-4224-99a1-6a2ffdc443cc">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{showAddress}]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{addressZip} + " " + $P{addressCity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="487" splitType="Stretch">
+			<image scaleImage="RetainShape" hAlign="Left" vAlign="Top" onErrorType="Blank">
+				<reportElement x="1" y="0" width="435" height="244" uuid="795d3df0-90f3-4351-906c-a5f6bad9f384">
+					<printWhenExpression><![CDATA[$P{propertyMainImage} != null]]></printWhenExpression>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="0.0" lineColor="#F2F2F2"/>
+				</box>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA[$P{propertyMainImage}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="260" width="554" height="20" forecolor="#2B2E33" uuid="4c04702b-30a1-4410-8893-69e93786e55f"/>
+				<textElement>
+					<font fontName="Source Sans Pro" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBJEKT-ÜBERBLICK]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="330" width="554" height="1" forecolor="#E6E6E6" uuid="77e1d274-bd1e-42c9-8958-fe216fed0cc7"/>
+			</line>
+			<textField pattern="0.## Zimmer">
+				<reportElement x="23" y="290" width="146" height="18" uuid="488a2da7-246d-44a4-85f0-56fd0de56251"/>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyRooms}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00# m²" isBlankWhenNull="true">
+				<reportElement x="203" y="290" width="146" height="18" uuid="0ba25412-64e2-4a8f-a9cf-1679bce3d44d"/>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertySize}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="290" width="146" height="18" uuid="614acacd-363e-42fc-b3cf-79ddf39133fb"/>
+				<textElement>
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Balkon: " + ($P{hasBalcony} ? "Ja" : "-")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="341" width="100" height="16" forecolor="#2B2E33" uuid="be4f3aa4-15c4-47a1-baa6-93c0cd49c6b1"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PREISE & KOSTEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="341" width="100" height="16" forecolor="#2B2E33" uuid="4cf12ed1-9ace-4ddd-8fc1-d5f0b4a380b7"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SONSTIGES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="379" width="100" height="18" forecolor="#9FA9BA" uuid="7fc15158-8015-4044-9d3a-2e0ae1949dbb"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Grundmiete]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="100" y="379" width="160" height="18" forecolor="#2B2E33" uuid="a396d094-3155-4369-9609-ee75258e47ab"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyPrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="397" width="100" height="18" forecolor="#9FA9BA" uuid="bf1b00de-baee-4d2c-a2a6-01dee6b165f2"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Betriebskosten]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="100" y="397" width="160" height="18" forecolor="#2B2E33" uuid="22d3db5f-ef25-4c57-ba8b-f7ed4c6ec0f0"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceServiceCharge}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="415" width="100" height="18" forecolor="#9FA9BA" uuid="b7c0c5a1-d844-47f9-9881-1a068f02d816"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Heizkosten]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="100" y="415" width="160" height="18" forecolor="#2B2E33" uuid="501779ff-460f-456c-bbdc-2a3e5f1bbaa6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceHeatingCost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="361" width="100" height="18" forecolor="#9FA9BA" uuid="bfc0d2c7-60c4-496f-94e5-c0ab49275191"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Gesamtmiete]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="100" y="361" width="160" height="18" forecolor="#2B2E33" uuid="0758b21b-a2ff-40e8-9ab7-0a5cc524de44"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceTotalRent}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="433" width="210" height="18" forecolor="#9FA9BA" uuid="668810ed-8f6e-4e08-a156-9e4cc0a4ee90"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Kaution/Genossenschaftsanteile]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="100" y="433" width="160" height="18" forecolor="#2B2E33" uuid="d77839cc-565c-476c-af06-5ec70bcbe4c3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceBailment}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="361" width="100" height="18" forecolor="#9FA9BA" uuid="ec74e4ca-1eea-43fc-a553-3b08a1e8b09a"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Verfügbar]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="380" y="361" width="160" height="18" forecolor="#2B2E33" uuid="de45ced5-b766-46ad-9543-32962b6bf3cc">
+					<printWhenExpression><![CDATA[$P{propertyAvailableFrom} != null]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyAvailableFrom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="380" y="379" width="160" height="18" forecolor="#2B2E33" uuid="0b7f3cea-af3d-4734-b9b2-4fa9add80776"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyFloor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="379" width="100" height="18" forecolor="#9FA9BA" uuid="e59f59e7-8023-4eca-b595-2f0bc9e42f90"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Etage]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="380" y="415" width="160" height="18" forecolor="#2B2E33" uuid="f627a68b-72ee-4bfc-a89c-36fd4d8e95ce"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="415" width="100" height="18" forecolor="#9FA9BA" uuid="b91c2128-d0d5-461a-ab53-fe50a09a5564"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Ansprechpartner]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="280" y="397" width="260" height="18" uuid="197692cb-6aac-44df-86e1-3313fb23e144"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="-1" width="100" height="18" forecolor="#9FA9BA" uuid="fecefa87-43c9-4b83-ad27-6089ed30de81"/>
+					<box>
+						<pen lineColor="#E6E6E6"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Source Sans Pro" size="14"/>
+					</textElement>
+					<text><![CDATA[Unternehmen]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="100" y="-1" width="160" height="18" forecolor="#2B2E33" uuid="a8869482-983d-4e70-9077-79ff3fb45a58"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Source Sans Pro" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{companyName}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="433" width="100" height="18" forecolor="#9FA9BA" uuid="f993ef03-e4db-4573-a1fd-af3da8fe0101"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Telefon]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="380" y="433" width="160" height="18" forecolor="#2B2E33" uuid="b0448c24-2e09-4621-9ccf-c7198c812849"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactPhone}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="180" y="290" width="18" height="18" uuid="711a11e0-ef72-46f9-a820-9f95e04df100"/>
+				<imageExpression><![CDATA[$P{areaImage}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1" y="290" width="18" height="18" uuid="9102983a-10f2-4dac-95b9-3f30b9fe07d7"/>
+				<imageExpression><![CDATA[$P{roomsImage}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="362" y="289" width="18" height="18" uuid="a787802c-2118-4aeb-a952-dbb4969433e5"/>
+				<imageExpression><![CDATA[$P{balconyImage}]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement positionType="Float" x="280" y="451" width="260" height="18" uuid="c044ce39-3752-4add-b686-d0c598394da4"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="-1" width="50" height="18" forecolor="#9FA9BA" uuid="b8d7cee3-c17c-46c9-97e7-d41f08200021"/>
+					<box>
+						<pen lineColor="#E6E6E6"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Source Sans Pro" size="14"/>
+					</textElement>
+					<text><![CDATA[Email]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="50" y="-1" width="210" height="18" forecolor="#2B2E33" uuid="ff10a075-366b-421b-9d43-1a4305993692"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Source Sans Pro" size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{contactEmail}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="280" y="469" width="68" height="18" forecolor="#9FA9BA" uuid="7c033e13-5b9b-4266-8824-4ba7caecd95a">
+					<printWhenExpression><![CDATA[$P{objektId} != null]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Objekt-ID]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="469" width="192" height="18" forecolor="#2B2E33" uuid="7d8474f1-553e-402f-897e-bf970eb92ec6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objektId}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="669" splitType="Immediate">
+			<property name="com.jaspersoft.studio.layout"/>
+			<break>
+				<reportElement x="0" y="1" width="99" height="1" uuid="fae91086-3d95-4d39-88fe-3ca274d652cc">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+			<staticText>
+				<reportElement x="0" y="5" width="554" height="21" forecolor="#2B2E33"
+							   uuid="88818b00-0b4e-4c3f-895d-8cc2256158c6"/>
+				<box bottomPadding="5"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WOHNUNGSDETAILS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="26" width="554" height="24" isRemoveLineWhenBlank="true" forecolor="#9FA9BA" uuid="02252f1c-27d6-4aa4-815f-7ccc19b74d59"/>
+				<box bottomPadding="10"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="100" width="554" height="21" forecolor="#2B2E33" uuid="4153d18c-ef3d-4be2-bbe1-fa14d91cb6a5"/>
+				<box bottomPadding="5"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAGEBESCHREIBUNG]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="121" width="554" height="28" isRemoveLineWhenBlank="true" forecolor="#9FA9BA" uuid="a97b133d-4183-4430-8ffd-9a4f84650078"/>
+				<box bottomPadding="10"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyLocationDescription}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="1" y="70" width="554" height="1" forecolor="#E6E6E6" uuid="113aa258-455d-4e9c-a621-963a15e28656"/>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="169" width="554" height="1" forecolor="#E6E6E6" uuid="5e64da06-9724-452f-bbba-faf07df137dc"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="197" width="554" height="21" forecolor="#2B2E33" uuid="c915384c-0ba1-4a07-b94a-8f44bd3db927"/>
+				<box bottomPadding="5"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BEMERKUNGEN ZUR AUSSTATTUNG]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="218" width="554" height="24" isRemoveLineWhenBlank="true" forecolor="#9FA9BA" uuid="55d78ee9-d861-466e-b49b-4658ec8150b5"/>
+				<box bottomPadding="10"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{furnishingDescription}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="0" y="263" width="554" height="1" forecolor="#E6E6E6" uuid="d0836d20-fb3d-41e8-8f05-69d136be5e60"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="291" width="554" height="21" forecolor="#2B2E33" uuid="ad053602-bc75-469b-a75b-534e024ff9b5"/>
+				<box bottomPadding="5"/>
+				<textElement>
+					<font fontName="Source Sans Pro" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SONSTIGES]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="312" width="554" height="24" isRemoveLineWhenBlank="true"
+							   forecolor="#9FA9BA" uuid="c44170f5-63c7-4c23-bde3-581cb7e95c8c"/>
+				<box bottomPadding="10"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objectMiscellaneousText}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="2">
+				<reportElement positionType="Float" stretchType="ElementGroupHeight" mode="Transparent" x="1" y="629"
+							   width="554" height="40" isPrintWhenDetailOverflows="true"
+							   uuid="9188a639-3ea0-41bd-8186-22b73d80338a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#E6E6E6"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+		<band height="668">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<break>
+				<reportElement x="0" y="-34" width="100" height="1" uuid="dbef8466-b4ce-470a-8394-0ff7142d9abe"/>
+			</break>
+			<staticText>
+				<reportElement x="0" y="5" width="554" height="16" forecolor="#2B2E33" uuid="420b8b87-92df-43d0-ad3b-baa16ebc6a73"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBJEKTDATEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="180" height="22" forecolor="#9FA9BA" uuid="25daf8c4-7e1e-4fa3-b299-0996cf5a1fc3"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Objekttyp]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="33" width="374" height="22" forecolor="#2B2E33" uuid="5f1ff43a-fc08-47a5-b7f8-aa8b1783566c"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="77" width="180" height="22" forecolor="#9FA9BA" uuid="76587492-f02e-4caa-b25f-56b6d3683989"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Adresse]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="77" width="374" height="22" forecolor="#2B2E33" uuid="bdcfa856-60c3-4922-84f4-b7c031d30fdb"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{showAddress} ? $P{addressFull} : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="99" width="180" height="22" forecolor="#9FA9BA" uuid="d232e809-91fd-45ba-b7e3-ef8a9cf35087"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Etage]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="99" width="374" height="22" forecolor="#2B2E33" uuid="8655d9f1-5fd8-49c3-9fc3-808d7431f933"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyFloor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="121" width="180" height="22" forecolor="#9FA9BA" uuid="d5aaf2da-30fc-4333-a28c-ed79f8d50c0a"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Wohnfläche ca.]]></text>
+			</staticText>
+			<textField pattern="#,##0.00# m²" isBlankWhenNull="true">
+				<reportElement x="180" y="121" width="374" height="22" forecolor="#2B2E33" uuid="b0d33c91-e78a-4ba1-9426-fc979a0df6cb"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertySize}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="143" width="180" height="22" forecolor="#9FA9BA" uuid="3e43883d-8090-4d34-88da-a9fa993f5891"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Zimmer]]></text>
+			</staticText>
+			<textField pattern="0.##" isBlankWhenNull="true">
+				<reportElement x="180" y="143" width="374" height="22" forecolor="#2B2E33" uuid="421fa86b-f5d0-4e41-b67d-9b52d6d3ed9d"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyRooms}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="165" width="180" height="22" forecolor="#9FA9BA" uuid="ccfe8ff5-f749-49f0-a099-485b765cbebb"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Badezimmer]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="165" width="374" height="22" forecolor="#2B2E33" uuid="e37e0691-5434-4f03-990b-74eede263234"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyBathRooms}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="187" width="180" height="22" forecolor="#9FA9BA" uuid="fd858d20-3737-400f-828f-7f52c5c9e24e"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Balkone]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="187" width="374" height="22" forecolor="#2B2E33" uuid="8ad4a7eb-43de-4980-9618-c4a8e1b6a2fa"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{balcony} != null ? $P{balcony} : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="209" width="180" height="22" forecolor="#9FA9BA" uuid="4896474b-5557-41d5-8a57-763fbc091ad4"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Heizung]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="180" y="209" width="374" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="8bfac02d-82dc-49b9-9448-5a43436774aa"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{heaterType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="231" width="180" height="22" forecolor="#9FA9BA" uuid="feafd3cb-e7c4-4ead-829b-d521920d37f4"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Zustand]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="180" y="231" width="374" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="3eac2160-2f02-4497-a483-149e3e95d50a"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyCondition}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="341" width="180" height="22" forecolor="#9FA9BA" uuid="47044c99-d299-4aeb-b536-88975f5a4f3e"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Grundmiete]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="180" y="341" width="374" height="22" forecolor="#2B2E33" uuid="c88e9430-181f-4e6b-b6e2-04b385c3564f"/>
+				<box>
+					<topPen lineStyle="Solid"/>
+					<leftPen lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyPrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="363" width="180" height="22" forecolor="#9FA9BA" uuid="f232249e-98c5-44fd-b147-5074fa1b1d76"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Heizkosten]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="180" y="363" width="374" height="22" forecolor="#2B2E33" uuid="0d1798c4-31d2-4b51-93f2-26f4cf5c4962"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceHeatingCost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="385" width="180" height="22" forecolor="#9FA9BA" uuid="0fec22a8-f94c-404b-86f0-1cbc5f064edd"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Betriebskosten]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="180" y="385" width="374" height="22" forecolor="#2B2E33" uuid="f33fb1c5-2cd0-48e9-b0a8-ab9b70a03b68"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceServiceCharge}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="407" width="180" height="22" forecolor="#9FA9BA" uuid="6cfd27c9-1053-404c-9405-6469448a2af1"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Gesamtmiete]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="180" y="407" width="374" height="22" forecolor="#2B2E33" uuid="de479861-4310-435b-9e41-041d702b4b2a"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceTotalRent}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="429" width="250" height="22" forecolor="#9FA9BA" uuid="08f5a7ff-67fd-4443-8cff-43aa286bc31e"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Kaution/Genossenschaftsanteile]]></text>
+			</staticText>
+			<textField pattern="#,##0.00 €" isBlankWhenNull="true">
+				<reportElement x="180" y="429" width="374" height="22" forecolor="#2B2E33" uuid="80e7e436-ef10-4b04-88ec-446935000f48"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{priceBailment}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="253" width="374" height="22" forecolor="#2B2E33" uuid="f7c0e2ba-0d78-499e-91ab-5bfb18f284c0"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyConstructionYear}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="253" width="180" height="22" forecolor="#9FA9BA" uuid="2ff7da9c-9d4f-4115-9f68-b9be459b5c9f"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Baujahr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="473" width="180" height="22" forecolor="#9FA9BA" uuid="0e44e984-dbe3-44f9-ac5d-1eba48b6003f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Kamin]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="473" width="374" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="884ed44d-2402-463f-9b7b-42469d34c992"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fireplace} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="495" width="180" height="22" forecolor="#9FA9BA" uuid="20376609-65d7-463b-80a1-0c01e541d960"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Gartennutzung]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="495" width="374" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="8796a147-4827-476d-a695-5abfc927b187"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gardenUse} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="517" width="180" height="22" forecolor="#9FA9BA" uuid="cac0a269-13b1-41e4-8361-5e33f5b2cfd4"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Wasch/trockenraum]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="517" width="374" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="ada0df3c-3d76-433a-acf8-23ea90f8ab5a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{washDryRoom} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="539" width="180" height="22" forecolor="#9FA9BA" uuid="6dacb9ee-96ee-424b-b023-5621cc0f7345"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Abstellraum]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="539" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="5d25bf0e-4406-451e-bfed-275180048cd7"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{storeRoom} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="561" width="180" height="22" forecolor="#9FA9BA" uuid="11e62561-3ce8-43be-be2e-d50353d652ae"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Fahrradraum]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="561" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="4badba70-6a0a-453f-8d7b-984d7381fb59"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bicycleRoom} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="583" width="180" height="22" forecolor="#9FA9BA" uuid="1fcba04e-3e0b-4397-a3a5-a9d84984a28e"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Dachboden]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="583" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="b81ac1f0-0442-485e-9692-e18c195e4f60"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{attic} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="605" width="180" height="22" forecolor="#9FA9BA" uuid="60a42413-1f86-43c9-8363-b04d882e385d"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Seniorengerecht]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="605" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="6c191eb2-821e-4afb-87dc-406b92fecc03"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{seniors} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="275" width="180" height="22" forecolor="#9FA9BA" uuid="f0db0a6d-cbcf-4173-8d93-95f7808b7ef5"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Energieausweistyp]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="275" width="374" height="22" forecolor="#2B2E33" uuid="0d714058-29e3-42fa-9d53-d417a7151927"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{energyPerformanceCertificateType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="297" width="180" height="22" forecolor="#9FA9BA" uuid="73ee6b1a-df7e-47db-82f7-cb5fb2e6757b"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Endenergiebedarf]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="297" width="374" height="22" forecolor="#2B2E33" uuid="0d8ea900-20e7-48f5-9f44-d630186eea56"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{energyConsumption}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="319" width="180" height="22" forecolor="#9FA9BA" uuid="9a4e8093-e62a-443b-a260-5de15879e0c2"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Erstellungsdatum]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="319" width="374" height="22" forecolor="#2B2E33" uuid="2a3f874c-287a-4fbf-97c3-9e0091a8c850"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{energyCertificateCreationDate} != null ? ($P{energyCertificateCreationDate}.equals( "APRIL_2014" ) ? "bis 30.04.14" : ($P{energyCertificateCreationDate}.equals( "MAY_2014" ) ? "ab 01.05.2014" : "")) : ""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="451" width="180" height="22" forecolor="#9FA9BA" uuid="6f52d083-11b5-45d9-bd31-694b45db1b69"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Anzahl Etagen]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="180" y="451" width="374" height="22" forecolor="#2B2E33" uuid="96da8764-6992-4c59-a5f5-deaecc613e62"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numberOfFloors}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="55" width="180" height="22" forecolor="#9FA9BA" uuid="440b8464-ae7b-42d6-9769-a11e6ce863d9"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Immobilientyp]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="55" width="374" height="22" forecolor="#2B2E33" uuid="4213f8b7-770a-4ad1-9725-e0abf4fd444b"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertySubType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="627" width="180" height="22" forecolor="#9FA9BA" uuid="70536558-fec4-43fb-a32e-b0e4469a8f89"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Einbauküche]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="627" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="e647d1d1-e263-41db-b25d-25b0256c2616"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{kitchenette} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="351">
+			<staticText>
+				<reportElement x="0" y="114" width="180" height="22" forecolor="#9FA9BA"
+							   uuid="885eaa0d-2d53-4dac-83ce-d06513fbe438"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Garten]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="114" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="6599bbfa-b40b-46af-ac72-10fd8914c817"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{garden} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="158" width="180" height="22" forecolor="#9FA9BA" uuid="8896f166-474c-40c9-9538-07c4b1737b29"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Barierrefrei]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="158" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="0123cb4e-321e-4f03-ba4b-87bd6dd35bfa"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{barrierFree} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="180" width="180" height="22" forecolor="#9FA9BA" uuid="2533317e-1892-4420-b566-92fcba790f0d"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Fahrstuhl]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="180" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="03f26183-9f8e-499a-bb3b-b7dab21d762d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{elevator} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="202" width="180" height="22" forecolor="#9FA9BA" uuid="2533317e-1892-4420-b566-92fcba790f0d"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[TV/Sat/Kabel]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="202" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="03f26183-9f8e-499a-bb3b-b7dab21d762d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tvSatCable} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="224" width="180" height="22" forecolor="#9FA9BA" uuid="cca4b8a1-2537-4fe2-8b0a-382575e7a744"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Gäste WC]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="224" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="54c6707d-aade-47cd-80d9-f4a494796d2b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{guestToilette} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="246" width="180" height="22" forecolor="#9FA9BA" uuid="507010c2-8530-41e9-ad71-4e45aab75c3b"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Stellplatz]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="246" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="127f261a-03f1-4212-ab41-695599ffca08"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parking} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="-19" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="5af27d91-21b9-4d48-85e1-00808ee1f039"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{urinal} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="-19" width="180" height="22" forecolor="#9FA9BA" uuid="130d90df-38cb-4325-aba8-c1e631b45c3c"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Urinal]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="0" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="d9c7fd19-69a0-4e0b-bad5-e91b12bf3490"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bidet} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="180" height="22" forecolor="#9FA9BA" uuid="e61eb4dd-58d3-42ae-8fb4-ae50462bf9a1"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Bidet]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement x="180" y="22" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="e978461a-bff0-4c05-a2f9-6268132426bc"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bathroomWindow} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="22" width="180" height="22" forecolor="#9FA9BA" uuid="732f39c6-3a31-4df4-b7ba-f46555d9c79d"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Badezimmerfenster]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="44" width="180" height="22" forecolor="#9FA9BA" uuid="5b80dff5-613f-4d43-8b2c-40f75c7379d3"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Gegensprechanlage]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement x="180" y="44" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="48972e99-e5fe-4fb9-b694-785bbba0a473"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{intercomType} != null ? $P{intercomType}  : "-"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="66" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="47b9248c-be97-491e-83b7-c0c64ad0121c"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shutter} ? "Ja" : "-"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="66" width="180" height="22" forecolor="#9FA9BA" uuid="7ad42b89-16ef-475e-a508-d88e2139e33c"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Fensterladen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="88" width="180" height="22" forecolor="#9FA9BA" uuid="eee0cce4-e25c-4468-b815-ebc3c51c7cc1"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Loggien]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="88" width="375" height="22" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="60cb3d66-cfde-4e7b-b3b5-35cefd929576"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{loggias} != null ? $P{loggias} : "-"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="140" width="375" height="18" isPrintWhenDetailOverflows="true" forecolor="#2B2E33" uuid="53228524-e57c-4c50-aef5-4a2c3ef65920"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{wheelChair} ? "Ja" : "Nein"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="136" width="180" height="22" forecolor="#9FA9BA"
+							   uuid="61e160e0-b3f1-41ad-91a5-c3cc166d277a"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Rollstuhlgerecht]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement stretchType="ContainerHeight" x="180" y="268" width="375" height="25"
+							   isPrintWhenDetailOverflows="true" forecolor="#2B2E33"
+							   uuid="e020c75c-eef6-483d-8e1a-d474688b7d73"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#E6E6E6"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propertyAvailableFrom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="268" width="180" height="25" forecolor="#9FA9BA"
+							   uuid="7c5a8cf8-8438-4702-bd7a-d00ce80928e1"/>
+				<box>
+					<pen lineColor="#E6E6E6"/>
+					<bottomPen lineWidth="1.0" lineColor="#E6E6E6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Source Sans Pro" size="14"/>
+				</textElement>
+				<text><![CDATA[Verfügbar ab]]></text>
+			</staticText>
+		</band>
+		<band height="170">
+			<componentElement>
+				<reportElement x="0" y="1" width="555" height="162" isPrintWhenDetailOverflows="true"
+							   uuid="4d44ac8f-fcd5-4a63-bd05-2673ecedff9a">
+					<property name="com.jaspersoft.studio.layout"
+							  value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					<printWhenExpression><![CDATA[$P{propertyImages} != null]]></printWhenExpression>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components"
+						 xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd"
+						 printOrder="Horizontal">
+					<datasetRun subDataset="Dataset2" uuid="0eaabec8-f539-4f67-ab67-961b3f7e6094">
+						<dataSourceExpression>
+							<![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{propertyImages})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="162" width="277">
+						<image scaleImage="RetainShape" hAlign="Center">
+							<reportElement x="4" y="4" width="245" height="134"
+										   uuid="a0c68d2c-13d3-4c82-a65d-c42a03d415c1">
+								<printWhenExpression><![CDATA[$F{image} != null]]></printWhenExpression>
+							</reportElement>
+							<box padding="0">
+								<pen lineWidth="4.0" lineColor="#F2F2F2"/>
+							</box>
+							<graphicElement fill="Solid"/>
+							<imageExpression><![CDATA[$F{image}]]></imageExpression>
+						</image>
+						<staticText>
+							<reportElement x="0" y="135" width="245" height="20"
+										   uuid="ffe8224d-8f84-448c-9ae7-19853b4fb792"/>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+		<band height="559">
+			<componentElement>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="550"
+							   isPrintWhenDetailOverflows="true" uuid="a32e05c8-1c55-45da-8460-23494c8bdc00">
+					<property name="com.jaspersoft.studio.layout"
+							  value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[$P{floorPlanImages} != null]]></printWhenExpression>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components"
+						 xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd"
+						 printOrder="Vertical">
+					<datasetRun subDataset="Dataset3" uuid="45cceb21-60ec-4439-8885-59e0b0d367d1">
+						<dataSourceExpression>
+							<![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{floorPlanImages})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="550" width="555">
+						<image scaleImage="RetainShape" hAlign="Center">
+							<reportElement x="0" y="0" width="555" height="500"
+										   uuid="71fdd83b-ac95-4387-b7ac-428045817b04">
+								<printWhenExpression><![CDATA[$F{image} != null]]></printWhenExpression>
+							</reportElement>
+							<graphicElement fill="Solid"/>
+							<imageExpression><![CDATA[$F{image}.toURI().toURL()]]></imageExpression>
+						</image>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="51" splitType="Stretch">
+			<image>
+				<reportElement x="1" y="9" width="32" height="32" uuid="efc38c21-0ee0-488f-96cf-31493f47daf4">
+					<printWhenExpression><![CDATA[$P{customerLogo} != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{customerLogo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="430" y="17" width="80" height="16" forecolor="#2B2E33"
+							   uuid="baf775e7-73db-4c13-aa4f-f73d17a338ec"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Seite " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="510" y="17" width="40" height="16" uuid="7c66a120-2ca7-4575-85b0-59c27dbfd7e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" von " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,17 @@
+database:
+  test:
+    url: jdbc:postgresql://localhost:5432/immomio_2-test
+    driver: org.postgresql.Driver
+    user: postgres
+    password: sample123
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show_sql: true
+    database-platform: de.immomio.config.dialect.CustomPostgreSqlDialect
+    generate-ddl: false
+

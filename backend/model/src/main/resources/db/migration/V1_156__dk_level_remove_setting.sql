@@ -1,0 +1,1 @@
+alter table landlord.customersettings add column delete_dk_level_after_renting boolean default true;

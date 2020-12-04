@@ -1,0 +1,143 @@
+heat_template_version: 2013-05-23
+description: Cloud Foundry Setup Security Groups
+
+parameters:
+  my_instance_name:
+    type: string
+    description: Name of the instance to deploy
+    default: immomio_ftp
+  key_name:
+    type: string
+    description: Name of keypair to assign to servers
+    default: immomio
+  image:
+    type: string
+    description: Name of image to use for servers
+  flavor:
+    type: string
+    description: Flavor to use for server
+  public_net:
+    type: string
+    description: Public network for router connection
+
+resources:
+  immomio_ftp:
+    type: OS::Nova::Server
+    properties:
+      name: { get_param: my_instance_name }
+      image: { get_param: image }
+      flavor: { get_param: flavor }
+      key_name: { get_param: key_name }
+      networks:
+        - port: { get_resource: immomio_ftp_port }
+      user_data_format: RAW
+            user_data:
+              str_replace:
+                template: |
+                  #!/bin/bash
+                  groupadd -r immomio
+                  useradd -r -g immomio immomio
+
+                  #accepts the Oracle JDK8 license automatically
+                  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+
+                  #installs java8
+                  apt-get update && apt-get install -y software-properties-common
+                  yes \n | add-apt-repository ppa:webupd8team/java
+                  apt-get update
+
+                  apt-get install -y oracle-java8-installer
+                  # automatically set up the Java 8 environment variables
+                  apt-get install oracle-java8-set-default
+
+                  #install monit
+                  apt-get update
+                  apt-get install monit
+
+                  mkdir -p /var/immomio/run
+                  mkdir -p /var/immomio/sys
+                  mkdir -p /var/immomio/monit
+                  mkdir -p /var/immomio/packages/importer-job
+
+
+
+  immomio_ftp_port:
+    type: OS::Neutron::Port
+    properties:
+      security_groups: [{ get_resource: immomio_security_group }]
+      network_id: { get_resource: default_nw_os_0 }
+
+  immomio_ftp_vol:
+    type: OS::Cinder::Volume
+    properties:
+      size: 40
+
+  immomio_ftp_vol_att:
+    type: OS::Cinder::VolumeAttachment
+    properties:
+      instance_uuid: { get_resource: immomio_ftp }
+      volume_id: { get_resource: immomio_ftp_vol }
+      mountpoint: /dev/vdb
+
+  default_nw_os_0:
+    type: OS::Neutron::Net
+
+  default_nw_os_0_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      network_id: { get_resource: default_nw_os_0 }
+      cidr: "172.16.100.0/24"
+      dns_nameservers: [8.8.8.8,8.8.4.4]
+      gateway_ip: "172.16.100.254"
+      ip_version: 4
+
+  default_rt:
+    type: OS::Neutron::Router
+    properties:
+      name: default_rt
+      external_gateway_info:
+        network: { get_param: public_net }
+
+  nw_os_interface_0:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router_id: { get_resource: default_rt }
+      subnet_id: { get_resource:  default_nw_os_0_subnet }
+    depends_on:
+      - default_rt
+      - default_nw_os_0_subnet
+
+  immomio_security_group:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      description: Security Group For Bosh
+      name: immomio_ftp
+      rules: [
+        {
+          remote_ip_prefix: 0.0.0.0/0,
+          protocol: tcp,
+          port_range_min: 20,
+          port_range_max: 20,
+        },
+        {
+          remote_ip_prefix: 0.0.0.0/0,
+          protocol: tcp,
+          port_range_min: 21,
+          port_range_max: 21,
+        },{
+          remote_ip_prefix: 0.0.0.0/0,
+          protocol: tcp,
+          port_range_min: 22,
+          port_range_max: 22,
+        },{
+          remote_ip_prefix: 0.0.0.0/0,
+          protocol: tcp,
+          port_range_min: 53,
+          port_range_max: 53,
+        },{
+          remote_ip_prefix: 0.0.0.0/0,
+          protocol: tcp,
+          port_range_min: 49152,
+          port_range_max: 49200,
+        }
+      ]

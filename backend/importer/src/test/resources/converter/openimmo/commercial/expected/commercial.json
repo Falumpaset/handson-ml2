@@ -1,0 +1,118 @@
+{
+  "id": null,
+  "type": "COMMERCIAL",
+  "externalId": 1,
+  "data": {
+    "name": "Freies Büro in Hamburg in der Elmenhorststraße 1, 22767 Hamburg, DE",
+    "size": 50.0,
+    "attic": false,
+    "floor": 3,
+    "rooms": null,
+    "garden": false,
+    "ground": "LAMINATE",
+    "heater": null,
+    "address": {
+      "city": "Hamburg",
+      "region": "Hamburg",
+      "street": "Elmenhorststraße",
+      "country": "DE",
+      "zipCode": "22767",
+      "additional": null,
+      "coordinates": null,
+      "houseNumber": "1"
+    },
+    "contact": null,
+    "seniors": false,
+    "bailment": 2000.0,
+    "elevator": true,
+    "flatType": null,
+    "landArea": null,
+    "basePrice": 1000.0,
+    "bathRooms": null,
+    "documents": [],
+    "fireplace": false,
+    "flatShare": false,
+    "gardenUse": false,
+    "houseType": null,
+    "storeRoom": false,
+    "externalId": null,
+    "garageData": null,
+    "gardenArea": null,
+    "objectType": "OFFICE",
+    "tvSatCable": false,
+    "attachments": [],
+    "barrierFree": true,
+    "bicycleRoom": false,
+    "heatingCost": null,
+    "kitchenette": true,
+    "referenceId": 1,
+    "showAddress": true,
+    "showContact": false,
+    "washDryRoom": false,
+    "basementSize": 30,
+    "availableFrom": {
+      "dateAvailable": "2020-06-16",
+      "stringAvailable": null
+    },
+    "guestToilette": false,
+    "parkingSpaces": [
+      {
+        "type": "GARAGE",
+        "price": 50,
+        "count": 2
+      },
+      {
+        "type": "UNDERGROUND_CAR_PARK",
+        "price": 50,
+        "count": 2
+      },
+      {
+        "type": "CARPORT",
+        "price": 50,
+        "count": 2
+      },
+      {
+        "type": "FREE_SPACE",
+        "price": 50,
+        "count": 2
+      }
+    ],
+    "serviceCharge": 100,
+    "commercialData": {
+      "officeType": "OFFICE",
+      "hasCanteen": true,
+      "lanCables": false,
+      "highVoltage": false,
+      "airConditioning": true,
+      "distanceToTrainStation": 10,
+      "distanceToHighway": 10,
+      "distanceToPublicTransport": 10,
+      "distanceToAirport": 10
+    },
+    "furnishingType": null,
+    "numberOfFloors": 3,
+    "previousTenant": null,
+    "totalRentGross": null,
+    "temporaryLiving": null,
+    "constructionYear": "2000",
+    "historicBuilding": false,
+    "numberOfBedrooms": null,
+    "numberOfTerraces": null,
+    "basementAvailable": true,
+    "bathroomEquipment": null,
+    "buildingCondition": "MINT_CONDITION",
+    "energyCertificate": {
+      "primaryEnergyProvider": "ALTERNATIVE"
+    },
+    "lastRefurbishment": "2010",
+    "numberOfBalconies": null,
+    "objectDescription": "Test Objektbeschreibung",
+    "totalParkingPrice": null,
+    "balconyTerraceArea": null,
+    "objectLocationText": "Test Lage",
+    "heatingCostIncluded": false,
+    "furnishingDescription": "Test Ausstatt",
+    "objectMiscellaneousText": "Test sonstige Angaben",
+    "parkingPriceIncludedToAdditionalCosts": false
+  }
+}

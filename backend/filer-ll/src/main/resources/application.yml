@@ -1,0 +1,12 @@
+server:
+  port: 0
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: filer-ll
+---
+spring:
+  profiles: development, default
+server:
+  port: 8002

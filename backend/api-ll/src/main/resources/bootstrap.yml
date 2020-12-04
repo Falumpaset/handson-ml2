@@ -1,0 +1,47 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: api-ll,application-ll,module-config,module-config-ll
+      username: root
+      password: s3cr3t
+
+---
+
+spring:
+  profiles: integration
+  cloud:
+    config:
+      uri: http://cloud-config-server.itg.immomio.com
+      username: root
+      password: s3cr3t
+
+---
+
+spring:
+  profiles: staging
+  cloud:
+    config:
+      uri: http://cloud-config-server.stg.immomio.com
+      username: root
+      password: s3cr3t
+
+---
+
+spring:
+  profiles: hotfix
+  cloud:
+    config:
+      uri: https://cloud-config-server.htf.immomio.com
+      username: root
+      password: s3cr3t
+
+---
+
+spring:
+  profiles: production
+  cloud:
+    config:
+      uri: https://cloud-config-server.immomio.com
+      username: root
+      password: s3cr3t

@@ -1,0 +1,10 @@
+---
+inherit: manifest-base.yml
+domain: imp
+env:
+    SPRING_PROFILES_ACTIVE: production
+services:
+  - prd-mm-mongodb
+  - prd-mm-postgresql
+  - prd-mm-rabbitmq
+  

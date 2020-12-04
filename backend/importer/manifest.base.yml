@@ -1,0 +1,11 @@
+---
+timeout: 180
+instances: 1
+memory: 1024M
+disk_quota: 2048M
+path: target/importer.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  JAVA_OPTS: "-Djava.security.egd=file:/dev/urandom"
+applications:
+- name: importer

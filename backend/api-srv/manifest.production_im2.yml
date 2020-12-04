@@ -1,0 +1,17 @@
+---
+# manifest for the complete immomio project
+instances: 1
+timeout: 180
+memory: 3G
+domain: immomio.com
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+env:
+  SPRING_PROFILES_ACTIVE: production
+applications:
+  - name: api-srv
+    host: api-srv
+    path: ./target/api-srv.jar
+    services:
+      - prod-geomPSQL
+      - prod-rabbitmq
+      - prod-newrelic

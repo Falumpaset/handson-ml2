@@ -1,0 +1,1 @@
+alter table shared.appointment add column agent_info jsonb;
